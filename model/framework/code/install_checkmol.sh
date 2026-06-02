@@ -49,8 +49,8 @@ else
     exit 1
   fi
   case "$MACH" in
-    x86_64|amd64) FPC_ARCH="x86_64" ;;
-    aarch64|arm64) FPC_ARCH="aarch64" ;;
+    x86_64|amd64)  FPC_ARCH="x86_64";  PPC="ppcx64" ;;
+    aarch64|arm64) FPC_ARCH="aarch64"; PPC="ppca64" ;;
     *) echo "ERROR: unsupported architecture '$MACH' for automatic FPC install" >&2; exit 1 ;;
   esac
 
@@ -63,14 +63,21 @@ else
   SRC="$WORK/fpc-${FPC_VERSION}.${FPC_ARCH}-linux"
   BIN_TAR="$SRC/binary.${FPC_ARCH}-linux.tar"
   PREFIX="$HOME/.local/share/eos5f0j-fpc"
+  FPCDIR="$PREFIX/lib/fpc/${FPC_VERSION}"
   mkdir -p "$PREFIX/etc"
 
   # Extract only what we need to compile: the compiler base and the config tool.
   tar -xOf "$BIN_TAR" "base.${FPC_ARCH}-linux.tar.gz"           | tar -xzf - -C "$PREFIX"
   tar -xOf "$BIN_TAR" "utils-fpcmkcfg.${FPC_ARCH}-linux.tar.gz" | tar -xzf - -C "$PREFIX"
 
+  # The release archive ships the compiler at lib/fpc/<ver>/ppcXXX but not the
+  # bin/ symlink the interactive installer would create. The fpc driver locates
+  # the compiler next to itself, so link it into bin/ (otherwise: "ppcx64 can't
+  # be executed, error code: 127").
+  ln -sf "$FPCDIR/$PPC" "$PREFIX/bin/$PPC"
+
   # Generate a config so the driver can locate its RTL units (SysUtils, Math).
-  "$PREFIX/lib/fpc/${FPC_VERSION}/samplecfg" "$PREFIX/lib/fpc/${FPC_VERSION}" "$PREFIX/etc" >/dev/null
+  "$FPCDIR/samplecfg" "$FPCDIR" "$PREFIX/etc" >/dev/null 2>&1 || true
   export PPC_CONFIG_PATH="$PREFIX/etc"
   FPC_BIN="$PREFIX/bin/fpc"
 fi
