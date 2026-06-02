@@ -1,205 +1,205 @@
 name,type,direction,description
-cation,integer,high,Number of cation occurrences detected by CheckMol in the molecule (0 if absent)
-anion,integer,high,Number of anion occurrences detected by CheckMol in the molecule (0 if absent)
-carbonyl_compound,integer,high,Number of carbonyl compound occurrences detected by CheckMol in the molecule (0 if absent)
-aldehyde,integer,high,Number of aldehyde occurrences detected by CheckMol in the molecule (0 if absent)
-ketone,integer,high,Number of ketone occurrences detected by CheckMol in the molecule (0 if absent)
-thiocarbonyl_compound,integer,high,Number of thiocarbonyl compound occurrences detected by CheckMol in the molecule (0 if absent)
-thioaldehyde,integer,high,Number of thioaldehyde occurrences detected by CheckMol in the molecule (0 if absent)
-thioketone,integer,high,Number of thioketone occurrences detected by CheckMol in the molecule (0 if absent)
-imine,integer,high,Number of imine occurrences detected by CheckMol in the molecule (0 if absent)
-hydrazone,integer,high,Number of hydrazone occurrences detected by CheckMol in the molecule (0 if absent)
-semicarbazone,integer,high,Number of semicarbazone occurrences detected by CheckMol in the molecule (0 if absent)
-thiosemicarbazone,integer,high,Number of thiosemicarbazone occurrences detected by CheckMol in the molecule (0 if absent)
-oxime,integer,high,Number of oxime occurrences detected by CheckMol in the molecule (0 if absent)
-oxime_ether,integer,high,Number of oxime ether occurrences detected by CheckMol in the molecule (0 if absent)
-ketene,integer,high,Number of ketene occurrences detected by CheckMol in the molecule (0 if absent)
-ketene_acetal_derivative,integer,high,Number of ketene acetal derivative occurrences detected by CheckMol in the molecule (0 if absent)
-carbonyl_hydrate,integer,high,Number of carbonyl hydrate occurrences detected by CheckMol in the molecule (0 if absent)
-hemiacetal,integer,high,Number of hemiacetal occurrences detected by CheckMol in the molecule (0 if absent)
-acetal,integer,high,Number of acetal occurrences detected by CheckMol in the molecule (0 if absent)
-hemiaminal,integer,high,Number of hemiaminal occurrences detected by CheckMol in the molecule (0 if absent)
-aminal,integer,high,Number of aminal occurrences detected by CheckMol in the molecule (0 if absent)
-thiohemiaminal,integer,high,Number of thiohemiaminal occurrences detected by CheckMol in the molecule (0 if absent)
-thioacetal,integer,high,Number of thioacetal occurrences detected by CheckMol in the molecule (0 if absent)
-enamine,integer,high,Number of enamine occurrences detected by CheckMol in the molecule (0 if absent)
-enol,integer,high,Number of enol occurrences detected by CheckMol in the molecule (0 if absent)
-enol_ether,integer,high,Number of enol ether occurrences detected by CheckMol in the molecule (0 if absent)
-hydroxy,integer,high,Number of hydroxy occurrences detected by CheckMol in the molecule (0 if absent)
-alcohol,integer,high,Number of alcohol occurrences detected by CheckMol in the molecule (0 if absent)
-primary_alcohol,integer,high,Number of primary alcohol occurrences detected by CheckMol in the molecule (0 if absent)
-secondary_alcohol,integer,high,Number of secondary alcohol occurrences detected by CheckMol in the molecule (0 if absent)
-tertiary_alcohol,integer,high,Number of tertiary alcohol occurrences detected by CheckMol in the molecule (0 if absent)
-1_2_diol,integer,high,Number of 1 2-diol occurrences detected by CheckMol in the molecule (0 if absent)
-1_2_aminoalcohol,integer,high,Number of 1 2-aminoalcohol occurrences detected by CheckMol in the molecule (0 if absent)
-phenol,integer,high,Number of phenol occurrences detected by CheckMol in the molecule (0 if absent)
-1_2_diphenol,integer,high,Number of 1 2-diphenol occurrences detected by CheckMol in the molecule (0 if absent)
-enediol,integer,high,Number of enediol occurrences detected by CheckMol in the molecule (0 if absent)
-ether,integer,high,Number of ether occurrences detected by CheckMol in the molecule (0 if absent)
-dialkyl_ether,integer,high,Number of dialkyl ether occurrences detected by CheckMol in the molecule (0 if absent)
-alkyl_aryl_ether,integer,high,Number of alkyl aryl ether occurrences detected by CheckMol in the molecule (0 if absent)
-diaryl_ether,integer,high,Number of diaryl ether occurrences detected by CheckMol in the molecule (0 if absent)
-thioether,integer,high,Number of thioether occurrences detected by CheckMol in the molecule (0 if absent)
-disulfide,integer,high,Number of disulfide occurrences detected by CheckMol in the molecule (0 if absent)
-peroxide,integer,high,Number of peroxide occurrences detected by CheckMol in the molecule (0 if absent)
-hydroperoxide,integer,high,Number of hydroperoxide occurrences detected by CheckMol in the molecule (0 if absent)
-hydrazine,integer,high,Number of hydrazine occurrences detected by CheckMol in the molecule (0 if absent)
-hydroxylamine,integer,high,Number of hydroxylamine occurrences detected by CheckMol in the molecule (0 if absent)
-amine,integer,high,Number of amine occurrences detected by CheckMol in the molecule (0 if absent)
-primary_amine,integer,high,Number of primary amine occurrences detected by CheckMol in the molecule (0 if absent)
-primary_aliphatic_amine,integer,high,Number of primary aliphatic amine occurrences detected by CheckMol in the molecule (0 if absent)
-primary_aromatic_amine,integer,high,Number of primary aromatic amine occurrences detected by CheckMol in the molecule (0 if absent)
-secondary_amine,integer,high,Number of secondary amine occurrences detected by CheckMol in the molecule (0 if absent)
-secondary_aliphatic_amine,integer,high,Number of secondary aliphatic amine occurrences detected by CheckMol in the molecule (0 if absent)
-secondary_mixed_amine,integer,high,Number of secondary mixed amine occurrences detected by CheckMol in the molecule (0 if absent)
-secondary_aromatic_amine,integer,high,Number of secondary aromatic amine occurrences detected by CheckMol in the molecule (0 if absent)
-tertiary_amine,integer,high,Number of tertiary amine occurrences detected by CheckMol in the molecule (0 if absent)
-tertiary_aliphatic_amine,integer,high,Number of tertiary aliphatic amine occurrences detected by CheckMol in the molecule (0 if absent)
-tertiary_mixed_amine,integer,high,Number of tertiary mixed amine occurrences detected by CheckMol in the molecule (0 if absent)
-tertiary_aromatic_amine,integer,high,Number of tertiary aromatic amine occurrences detected by CheckMol in the molecule (0 if absent)
-quaternary_ammonium_salt,integer,high,Number of quaternary ammonium salt occurrences detected by CheckMol in the molecule (0 if absent)
-n_oxide,integer,high,Number of N-oxide occurrences detected by CheckMol in the molecule (0 if absent)
-halogen_derivative,integer,high,Number of halogen derivative occurrences detected by CheckMol in the molecule (0 if absent)
-alkyl_halide,integer,high,Number of alkyl halide occurrences detected by CheckMol in the molecule (0 if absent)
-alkyl_fluoride,integer,high,Number of alkyl fluoride occurrences detected by CheckMol in the molecule (0 if absent)
-alkyl_chloride,integer,high,Number of alkyl chloride occurrences detected by CheckMol in the molecule (0 if absent)
-alkyl_bromide,integer,high,Number of alkyl bromide occurrences detected by CheckMol in the molecule (0 if absent)
-alkyl_iodide,integer,high,Number of alkyl iodide occurrences detected by CheckMol in the molecule (0 if absent)
-aryl_halide,integer,high,Number of aryl halide occurrences detected by CheckMol in the molecule (0 if absent)
-aryl_fluoride,integer,high,Number of aryl fluoride occurrences detected by CheckMol in the molecule (0 if absent)
-aryl_chloride,integer,high,Number of aryl chloride occurrences detected by CheckMol in the molecule (0 if absent)
-aryl_bromide,integer,high,Number of aryl bromide occurrences detected by CheckMol in the molecule (0 if absent)
-aryl_iodide,integer,high,Number of aryl iodide occurrences detected by CheckMol in the molecule (0 if absent)
-organometallic_compound,integer,high,Number of organometallic compound occurrences detected by CheckMol in the molecule (0 if absent)
-organolithium_compound,integer,high,Number of organolithium compound occurrences detected by CheckMol in the molecule (0 if absent)
-organomagnesium_compound,integer,high,Number of organomagnesium compound occurrences detected by CheckMol in the molecule (0 if absent)
-carboxylic_acid_derivative,integer,high,Number of carboxylic acid derivative occurrences detected by CheckMol in the molecule (0 if absent)
-carboxylic_acid,integer,high,Number of carboxylic acid occurrences detected by CheckMol in the molecule (0 if absent)
-carboxylic_acid_salt,integer,high,Number of carboxylic acid salt occurrences detected by CheckMol in the molecule (0 if absent)
-carboxylic_acid_ester,integer,high,Number of carboxylic acid ester occurrences detected by CheckMol in the molecule (0 if absent)
-lactone,integer,high,Number of lactone occurrences detected by CheckMol in the molecule (0 if absent)
-carboxylic_acid_amide,integer,high,Number of carboxylic acid amide occurrences detected by CheckMol in the molecule (0 if absent)
-carboxylic_acid_primary_amide,integer,high,Number of carboxylic acid primary amide occurrences detected by CheckMol in the molecule (0 if absent)
-carboxylic_acid_secondary_amide,integer,high,Number of carboxylic acid secondary amide occurrences detected by CheckMol in the molecule (0 if absent)
-carboxylic_acid_tertiary_amide,integer,high,Number of carboxylic acid tertiary amide occurrences detected by CheckMol in the molecule (0 if absent)
-lactam,integer,high,Number of lactam occurrences detected by CheckMol in the molecule (0 if absent)
-carboxylic_acid_hydrazide,integer,high,Number of carboxylic acid hydrazide occurrences detected by CheckMol in the molecule (0 if absent)
-carboxylic_acid_azide,integer,high,Number of carboxylic acid azide occurrences detected by CheckMol in the molecule (0 if absent)
-hydroxamic_acid,integer,high,Number of hydroxamic acid occurrences detected by CheckMol in the molecule (0 if absent)
-carboxylic_acid_amidine,integer,high,Number of carboxylic acid amidine occurrences detected by CheckMol in the molecule (0 if absent)
-carboxylic_acid_amidrazone,integer,high,Number of carboxylic acid amidrazone occurrences detected by CheckMol in the molecule (0 if absent)
-nitrile,integer,high,Number of nitrile occurrences detected by CheckMol in the molecule (0 if absent)
-acyl_halide,integer,high,Number of acyl halide occurrences detected by CheckMol in the molecule (0 if absent)
-acyl_fluoride,integer,high,Number of acyl fluoride occurrences detected by CheckMol in the molecule (0 if absent)
-acyl_chloride,integer,high,Number of acyl chloride occurrences detected by CheckMol in the molecule (0 if absent)
-acyl_bromide,integer,high,Number of acyl bromide occurrences detected by CheckMol in the molecule (0 if absent)
-acyl_iodide,integer,high,Number of acyl iodide occurrences detected by CheckMol in the molecule (0 if absent)
-acyl_cyanide,integer,high,Number of acyl cyanide occurrences detected by CheckMol in the molecule (0 if absent)
-imido_ester,integer,high,Number of imido ester occurrences detected by CheckMol in the molecule (0 if absent)
-imidoyl_halide,integer,high,Number of imidoyl halide occurrences detected by CheckMol in the molecule (0 if absent)
-thiocarboxylic_acid_derivative,integer,high,Number of thiocarboxylic acid derivative occurrences detected by CheckMol in the molecule (0 if absent)
-thiocarboxylic_acid,integer,high,Number of thiocarboxylic acid occurrences detected by CheckMol in the molecule (0 if absent)
-thiocarboxylic_acid_ester,integer,high,Number of thiocarboxylic acid ester occurrences detected by CheckMol in the molecule (0 if absent)
-thiolactone,integer,high,Number of thiolactone occurrences detected by CheckMol in the molecule (0 if absent)
-thiocarboxylic_acid_amide,integer,high,Number of thiocarboxylic acid amide occurrences detected by CheckMol in the molecule (0 if absent)
-thiolactam,integer,high,Number of thiolactam occurrences detected by CheckMol in the molecule (0 if absent)
-imido_thioester,integer,high,Number of imido thioester occurrences detected by CheckMol in the molecule (0 if absent)
-oxohetarene,integer,high,Number of oxohetarene occurrences detected by CheckMol in the molecule (0 if absent)
-thioxohetarene,integer,high,Number of thioxohetarene occurrences detected by CheckMol in the molecule (0 if absent)
-iminohetarene,integer,high,Number of iminohetarene occurrences detected by CheckMol in the molecule (0 if absent)
-orthocarboxylic_acid_derivative,integer,high,Number of orthocarboxylic acid derivative occurrences detected by CheckMol in the molecule (0 if absent)
-carboxylic_acid_orthoester,integer,high,Number of carboxylic acid orthoester occurrences detected by CheckMol in the molecule (0 if absent)
-carboxylic_acid_amide_acetal,integer,high,Number of carboxylic acid amide acetal occurrences detected by CheckMol in the molecule (0 if absent)
-carboxylic_acid_anhydride,integer,high,Number of carboxylic acid anhydride occurrences detected by CheckMol in the molecule (0 if absent)
-carboxylic_acid_imide,integer,high,Number of carboxylic acid imide occurrences detected by CheckMol in the molecule (0 if absent)
-carboxylic_acid_unsubstituted_imide,integer,high,Number of carboxylic acid unsubstituted imide occurrences detected by CheckMol in the molecule (0 if absent)
-carboxylic_acid_substituted_imide,integer,high,Number of carboxylic acid substituted imide occurrences detected by CheckMol in the molecule (0 if absent)
-co2_derivative,integer,high,Number of CO2 derivative occurrences detected by CheckMol in the molecule (0 if absent)
-carbonic_acid_derivative,integer,high,Number of carbonic acid derivative occurrences detected by CheckMol in the molecule (0 if absent)
-carbonic_acid_monoester,integer,high,Number of carbonic acid monoester occurrences detected by CheckMol in the molecule (0 if absent)
-carbonic_acid_diester,integer,high,Number of carbonic acid diester occurrences detected by CheckMol in the molecule (0 if absent)
-carbonic_acid_ester_halide,integer,high,Number of carbonic acid ester halide occurrences detected by CheckMol in the molecule (0 if absent)
-thiocarbonic_acid_derivative,integer,high,Number of thiocarbonic acid derivative occurrences detected by CheckMol in the molecule (0 if absent)
-thiocarbonic_acid_monoester,integer,high,Number of thiocarbonic acid monoester occurrences detected by CheckMol in the molecule (0 if absent)
-thiocarbonic_acid_diester,integer,high,Number of thiocarbonic acid diester occurrences detected by CheckMol in the molecule (0 if absent)
-thiocarbonic_acid_ester_halide,integer,high,Number of thiocarbonic acid ester halide occurrences detected by CheckMol in the molecule (0 if absent)
-carbamic_acid_derivative,integer,high,Number of carbamic acid derivative occurrences detected by CheckMol in the molecule (0 if absent)
-carbamic_acid,integer,high,Number of carbamic acid occurrences detected by CheckMol in the molecule (0 if absent)
-carbamic_acid_ester,integer,high,Number of carbamic acid ester occurrences detected by CheckMol in the molecule (0 if absent)
-carbamic_acid_halide,integer,high,Number of carbamic acid halide occurrences detected by CheckMol in the molecule (0 if absent)
-thiocarbamic_acid_derivative,integer,high,Number of thiocarbamic acid derivative occurrences detected by CheckMol in the molecule (0 if absent)
-thiocarbamic_acid,integer,high,Number of thiocarbamic acid occurrences detected by CheckMol in the molecule (0 if absent)
-thiocarbamic_acid_ester,integer,high,Number of thiocarbamic acid ester occurrences detected by CheckMol in the molecule (0 if absent)
-thiocarbamic_acid_halide,integer,high,Number of thiocarbamic acid halide occurrences detected by CheckMol in the molecule (0 if absent)
-urea,integer,high,Number of urea occurrences detected by CheckMol in the molecule (0 if absent)
-isourea,integer,high,Number of isourea occurrences detected by CheckMol in the molecule (0 if absent)
-thiourea,integer,high,Number of thiourea occurrences detected by CheckMol in the molecule (0 if absent)
-isothiourea,integer,high,Number of isothiourea occurrences detected by CheckMol in the molecule (0 if absent)
-guanidine,integer,high,Number of guanidine occurrences detected by CheckMol in the molecule (0 if absent)
-semicarbazide,integer,high,Number of semicarbazide occurrences detected by CheckMol in the molecule (0 if absent)
-thiosemicarbazide,integer,high,Number of thiosemicarbazide occurrences detected by CheckMol in the molecule (0 if absent)
-azide,integer,high,Number of azide occurrences detected by CheckMol in the molecule (0 if absent)
-azo_compound,integer,high,Number of azo compound occurrences detected by CheckMol in the molecule (0 if absent)
-diazonium_salt,integer,high,Number of diazonium salt occurrences detected by CheckMol in the molecule (0 if absent)
-isonitrile,integer,high,Number of isonitrile occurrences detected by CheckMol in the molecule (0 if absent)
-cyanate,integer,high,Number of cyanate occurrences detected by CheckMol in the molecule (0 if absent)
-isocyanate,integer,high,Number of isocyanate occurrences detected by CheckMol in the molecule (0 if absent)
-thiocyanate,integer,high,Number of thiocyanate occurrences detected by CheckMol in the molecule (0 if absent)
-isothiocyanate,integer,high,Number of isothiocyanate occurrences detected by CheckMol in the molecule (0 if absent)
-carbodiimide,integer,high,Number of carbodiimide occurrences detected by CheckMol in the molecule (0 if absent)
-nitroso_compound,integer,high,Number of nitroso compound occurrences detected by CheckMol in the molecule (0 if absent)
-nitro_compound,integer,high,Number of nitro compound occurrences detected by CheckMol in the molecule (0 if absent)
-nitrite,integer,high,Number of nitrite occurrences detected by CheckMol in the molecule (0 if absent)
-nitrate,integer,high,Number of nitrate occurrences detected by CheckMol in the molecule (0 if absent)
-sulfuric_acid_derivative,integer,high,Number of sulfuric acid derivative occurrences detected by CheckMol in the molecule (0 if absent)
-sulfuric_acid,integer,high,Number of sulfuric acid occurrences detected by CheckMol in the molecule (0 if absent)
-sulfuric_acid_monoester,integer,high,Number of sulfuric acid monoester occurrences detected by CheckMol in the molecule (0 if absent)
-sulfuric_acid_diester,integer,high,Number of sulfuric acid diester occurrences detected by CheckMol in the molecule (0 if absent)
-sulfuric_acid_amide_ester,integer,high,Number of sulfuric acid amide ester occurrences detected by CheckMol in the molecule (0 if absent)
-sulfuric_acid_amide,integer,high,Number of sulfuric acid amide occurrences detected by CheckMol in the molecule (0 if absent)
-sulfuric_acid_diamide,integer,high,Number of sulfuric acid diamide occurrences detected by CheckMol in the molecule (0 if absent)
-sulfuryl_halide,integer,high,Number of sulfuryl halide occurrences detected by CheckMol in the molecule (0 if absent)
-sulfonic_acid_derivative,integer,high,Number of sulfonic acid derivative occurrences detected by CheckMol in the molecule (0 if absent)
-sulfonic_acid,integer,high,Number of sulfonic acid occurrences detected by CheckMol in the molecule (0 if absent)
-sulfonic_acid_ester,integer,high,Number of sulfonic acid ester occurrences detected by CheckMol in the molecule (0 if absent)
-sulfonamide,integer,high,Number of sulfonamide occurrences detected by CheckMol in the molecule (0 if absent)
-sulfonyl_halide,integer,high,Number of sulfonyl halide occurrences detected by CheckMol in the molecule (0 if absent)
-sulfone,integer,high,Number of sulfone occurrences detected by CheckMol in the molecule (0 if absent)
-sulfoxide,integer,high,Number of sulfoxide occurrences detected by CheckMol in the molecule (0 if absent)
-sulfinic_acid_derivative,integer,high,Number of sulfinic acid derivative occurrences detected by CheckMol in the molecule (0 if absent)
-sulfinic_acid,integer,high,Number of sulfinic acid occurrences detected by CheckMol in the molecule (0 if absent)
-sulfinic_acid_ester,integer,high,Number of sulfinic acid ester occurrences detected by CheckMol in the molecule (0 if absent)
-sulfinic_acid_halide,integer,high,Number of sulfinic acid halide occurrences detected by CheckMol in the molecule (0 if absent)
-sulfinic_acid_amide,integer,high,Number of sulfinic acid amide occurrences detected by CheckMol in the molecule (0 if absent)
-sulfenic_acid_derivative,integer,high,Number of sulfenic acid derivative occurrences detected by CheckMol in the molecule (0 if absent)
-sulfenic_acid,integer,high,Number of sulfenic acid occurrences detected by CheckMol in the molecule (0 if absent)
-sulfenic_acid_ester,integer,high,Number of sulfenic acid ester occurrences detected by CheckMol in the molecule (0 if absent)
-sulfenic_acid_halide,integer,high,Number of sulfenic acid halide occurrences detected by CheckMol in the molecule (0 if absent)
-sulfenic_acid_amide,integer,high,Number of sulfenic acid amide occurrences detected by CheckMol in the molecule (0 if absent)
-thiol,integer,high,Number of thiol occurrences detected by CheckMol in the molecule (0 if absent)
-alkylthiol,integer,high,Number of alkylthiol occurrences detected by CheckMol in the molecule (0 if absent)
-arylthiol,integer,high,Number of arylthiol occurrences detected by CheckMol in the molecule (0 if absent)
-phosphoric_acid_derivative,integer,high,Number of phosphoric acid derivative occurrences detected by CheckMol in the molecule (0 if absent)
-phosphoric_acid,integer,high,Number of phosphoric acid occurrences detected by CheckMol in the molecule (0 if absent)
-phosphoric_acid_ester,integer,high,Number of phosphoric acid ester occurrences detected by CheckMol in the molecule (0 if absent)
-phosphoric_acid_halide,integer,high,Number of phosphoric acid halide occurrences detected by CheckMol in the molecule (0 if absent)
-phosphoric_acid_amide,integer,high,Number of phosphoric acid amide occurrences detected by CheckMol in the molecule (0 if absent)
-thiophosphoric_acid_derivative,integer,high,Number of thiophosphoric acid derivative occurrences detected by CheckMol in the molecule (0 if absent)
-thiophosphoric_acid,integer,high,Number of thiophosphoric acid occurrences detected by CheckMol in the molecule (0 if absent)
-thiophosphoric_acid_ester,integer,high,Number of thiophosphoric acid ester occurrences detected by CheckMol in the molecule (0 if absent)
-thiophosphoric_acid_halide,integer,high,Number of thiophosphoric acid halide occurrences detected by CheckMol in the molecule (0 if absent)
-thiophosphoric_acid_amide,integer,high,Number of thiophosphoric acid amide occurrences detected by CheckMol in the molecule (0 if absent)
-phosphonic_acid_derivative,integer,high,Number of phosphonic acid derivative occurrences detected by CheckMol in the molecule (0 if absent)
-phosphonic_acid,integer,high,Number of phosphonic acid occurrences detected by CheckMol in the molecule (0 if absent)
-phosphonic_acid_ester,integer,high,Number of phosphonic acid ester occurrences detected by CheckMol in the molecule (0 if absent)
-phosphine,integer,high,Number of phosphine occurrences detected by CheckMol in the molecule (0 if absent)
-phosphine_oxide,integer,high,Number of phosphine oxide occurrences detected by CheckMol in the molecule (0 if absent)
-boronic_acid_derivative,integer,high,Number of boronic acid derivative occurrences detected by CheckMol in the molecule (0 if absent)
-boronic_acid,integer,high,Number of boronic acid occurrences detected by CheckMol in the molecule (0 if absent)
-boronic_acid_ester,integer,high,Number of boronic acid ester occurrences detected by CheckMol in the molecule (0 if absent)
-alkene,integer,high,Number of alkene occurrences detected by CheckMol in the molecule (0 if absent)
-alkyne,integer,high,Number of alkyne occurrences detected by CheckMol in the molecule (0 if absent)
-aromatic_compound,integer,high,Number of aromatic compound occurrences detected by CheckMol in the molecule (0 if absent)
-heterocyclic_compound,integer,high,Number of heterocyclic compound occurrences detected by CheckMol in the molecule (0 if absent)
-alpha_aminoacid,integer,high,Number of alpha-aminoacid occurrences detected by CheckMol in the molecule (0 if absent)
-alpha_hydroxyacid,integer,high,Number of alpha-hydroxyacid occurrences detected by CheckMol in the molecule (0 if absent)
+cation,integer,high,Number of cation occurrences in the molecule
+anion,integer,high,Number of anion occurrences in the molecule
+carbonyl_compound,integer,high,Number of carbonyl compound occurrences in the molecule
+aldehyde,integer,high,Number of aldehyde occurrences in the molecule
+ketone,integer,high,Number of ketone occurrences in the molecule
+thiocarbonyl_compound,integer,high,Number of thiocarbonyl compound occurrences in the molecule
+thioaldehyde,integer,high,Number of thioaldehyde occurrences in the molecule
+thioketone,integer,high,Number of thioketone occurrences in the molecule
+imine,integer,high,Number of imine occurrences in the molecule
+hydrazone,integer,high,Number of hydrazone occurrences in the molecule
+semicarbazone,integer,high,Number of semicarbazone occurrences in the molecule
+thiosemicarbazone,integer,high,Number of thiosemicarbazone occurrences in the molecule
+oxime,integer,high,Number of oxime occurrences in the molecule
+oxime_ether,integer,high,Number of oxime ether occurrences in the molecule
+ketene,integer,high,Number of ketene occurrences in the molecule
+ketene_acetal_derivative,integer,high,Number of ketene acetal derivative occurrences in the molecule
+carbonyl_hydrate,integer,high,Number of carbonyl hydrate occurrences in the molecule
+hemiacetal,integer,high,Number of hemiacetal occurrences in the molecule
+acetal,integer,high,Number of acetal occurrences in the molecule
+hemiaminal,integer,high,Number of hemiaminal occurrences in the molecule
+aminal,integer,high,Number of aminal occurrences in the molecule
+thiohemiaminal,integer,high,Number of thiohemiaminal occurrences in the molecule
+thioacetal,integer,high,Number of thioacetal occurrences in the molecule
+enamine,integer,high,Number of enamine occurrences in the molecule
+enol,integer,high,Number of enol occurrences in the molecule
+enol_ether,integer,high,Number of enol ether occurrences in the molecule
+hydroxy,integer,high,Number of hydroxy occurrences in the molecule
+alcohol,integer,high,Number of alcohol occurrences in the molecule
+primary_alcohol,integer,high,Number of primary alcohol occurrences in the molecule
+secondary_alcohol,integer,high,Number of secondary alcohol occurrences in the molecule
+tertiary_alcohol,integer,high,Number of tertiary alcohol occurrences in the molecule
+1_2_diol,integer,high,Number of 1 2-diol occurrences in the molecule
+1_2_aminoalcohol,integer,high,Number of 1 2-aminoalcohol occurrences in the molecule
+phenol,integer,high,Number of phenol occurrences in the molecule
+1_2_diphenol,integer,high,Number of 1 2-diphenol occurrences in the molecule
+enediol,integer,high,Number of enediol occurrences in the molecule
+ether,integer,high,Number of ether occurrences in the molecule
+dialkyl_ether,integer,high,Number of dialkyl ether occurrences in the molecule
+alkyl_aryl_ether,integer,high,Number of alkyl aryl ether occurrences in the molecule
+diaryl_ether,integer,high,Number of diaryl ether occurrences in the molecule
+thioether,integer,high,Number of thioether occurrences in the molecule
+disulfide,integer,high,Number of disulfide occurrences in the molecule
+peroxide,integer,high,Number of peroxide occurrences in the molecule
+hydroperoxide,integer,high,Number of hydroperoxide occurrences in the molecule
+hydrazine,integer,high,Number of hydrazine occurrences in the molecule
+hydroxylamine,integer,high,Number of hydroxylamine occurrences in the molecule
+amine,integer,high,Number of amine occurrences in the molecule
+primary_amine,integer,high,Number of primary amine occurrences in the molecule
+primary_aliphatic_amine,integer,high,Number of primary aliphatic amine occurrences in the molecule
+primary_aromatic_amine,integer,high,Number of primary aromatic amine occurrences in the molecule
+secondary_amine,integer,high,Number of secondary amine occurrences in the molecule
+secondary_aliphatic_amine,integer,high,Number of secondary aliphatic amine occurrences in the molecule
+secondary_mixed_amine,integer,high,Number of secondary mixed amine occurrences in the molecule
+secondary_aromatic_amine,integer,high,Number of secondary aromatic amine occurrences in the molecule
+tertiary_amine,integer,high,Number of tertiary amine occurrences in the molecule
+tertiary_aliphatic_amine,integer,high,Number of tertiary aliphatic amine occurrences in the molecule
+tertiary_mixed_amine,integer,high,Number of tertiary mixed amine occurrences in the molecule
+tertiary_aromatic_amine,integer,high,Number of tertiary aromatic amine occurrences in the molecule
+quaternary_ammonium_salt,integer,high,Number of quaternary ammonium salt occurrences in the molecule
+n_oxide,integer,high,Number of N-oxide occurrences in the molecule
+halogen_derivative,integer,high,Number of halogen derivative occurrences in the molecule
+alkyl_halide,integer,high,Number of alkyl halide occurrences in the molecule
+alkyl_fluoride,integer,high,Number of alkyl fluoride occurrences in the molecule
+alkyl_chloride,integer,high,Number of alkyl chloride occurrences in the molecule
+alkyl_bromide,integer,high,Number of alkyl bromide occurrences in the molecule
+alkyl_iodide,integer,high,Number of alkyl iodide occurrences in the molecule
+aryl_halide,integer,high,Number of aryl halide occurrences in the molecule
+aryl_fluoride,integer,high,Number of aryl fluoride occurrences in the molecule
+aryl_chloride,integer,high,Number of aryl chloride occurrences in the molecule
+aryl_bromide,integer,high,Number of aryl bromide occurrences in the molecule
+aryl_iodide,integer,high,Number of aryl iodide occurrences in the molecule
+organometallic_compound,integer,high,Number of organometallic compound occurrences in the molecule
+organolithium_compound,integer,high,Number of organolithium compound occurrences in the molecule
+organomagnesium_compound,integer,high,Number of organomagnesium compound occurrences in the molecule
+carboxylic_acid_derivative,integer,high,Number of carboxylic acid derivative occurrences in the molecule
+carboxylic_acid,integer,high,Number of carboxylic acid occurrences in the molecule
+carboxylic_acid_salt,integer,high,Number of carboxylic acid salt occurrences in the molecule
+carboxylic_acid_ester,integer,high,Number of carboxylic acid ester occurrences in the molecule
+lactone,integer,high,Number of lactone occurrences in the molecule
+carboxylic_acid_amide,integer,high,Number of carboxylic acid amide occurrences in the molecule
+carboxylic_acid_primary_amide,integer,high,Number of carboxylic acid primary amide occurrences in the molecule
+carboxylic_acid_secondary_amide,integer,high,Number of carboxylic acid secondary amide occurrences in the molecule
+carboxylic_acid_tertiary_amide,integer,high,Number of carboxylic acid tertiary amide occurrences in the molecule
+lactam,integer,high,Number of lactam occurrences in the molecule
+carboxylic_acid_hydrazide,integer,high,Number of carboxylic acid hydrazide occurrences in the molecule
+carboxylic_acid_azide,integer,high,Number of carboxylic acid azide occurrences in the molecule
+hydroxamic_acid,integer,high,Number of hydroxamic acid occurrences in the molecule
+carboxylic_acid_amidine,integer,high,Number of carboxylic acid amidine occurrences in the molecule
+carboxylic_acid_amidrazone,integer,high,Number of carboxylic acid amidrazone occurrences in the molecule
+nitrile,integer,high,Number of nitrile occurrences in the molecule
+acyl_halide,integer,high,Number of acyl halide occurrences in the molecule
+acyl_fluoride,integer,high,Number of acyl fluoride occurrences in the molecule
+acyl_chloride,integer,high,Number of acyl chloride occurrences in the molecule
+acyl_bromide,integer,high,Number of acyl bromide occurrences in the molecule
+acyl_iodide,integer,high,Number of acyl iodide occurrences in the molecule
+acyl_cyanide,integer,high,Number of acyl cyanide occurrences in the molecule
+imido_ester,integer,high,Number of imido ester occurrences in the molecule
+imidoyl_halide,integer,high,Number of imidoyl halide occurrences in the molecule
+thiocarboxylic_acid_derivative,integer,high,Number of thiocarboxylic acid derivative occurrences in the molecule
+thiocarboxylic_acid,integer,high,Number of thiocarboxylic acid occurrences in the molecule
+thiocarboxylic_acid_ester,integer,high,Number of thiocarboxylic acid ester occurrences in the molecule
+thiolactone,integer,high,Number of thiolactone occurrences in the molecule
+thiocarboxylic_acid_amide,integer,high,Number of thiocarboxylic acid amide occurrences in the molecule
+thiolactam,integer,high,Number of thiolactam occurrences in the molecule
+imido_thioester,integer,high,Number of imido thioester occurrences in the molecule
+oxohetarene,integer,high,Number of oxohetarene occurrences in the molecule
+thioxohetarene,integer,high,Number of thioxohetarene occurrences in the molecule
+iminohetarene,integer,high,Number of iminohetarene occurrences in the molecule
+orthocarboxylic_acid_derivative,integer,high,Number of orthocarboxylic acid derivative occurrences in the molecule
+carboxylic_acid_orthoester,integer,high,Number of carboxylic acid orthoester occurrences in the molecule
+carboxylic_acid_amide_acetal,integer,high,Number of carboxylic acid amide acetal occurrences in the molecule
+carboxylic_acid_anhydride,integer,high,Number of carboxylic acid anhydride occurrences in the molecule
+carboxylic_acid_imide,integer,high,Number of carboxylic acid imide occurrences in the molecule
+carboxylic_acid_unsubstituted_imide,integer,high,Number of carboxylic acid unsubstituted imide occurrences in the molecule
+carboxylic_acid_substituted_imide,integer,high,Number of carboxylic acid substituted imide occurrences in the molecule
+co2_derivative,integer,high,Number of CO2 derivative occurrences in the molecule
+carbonic_acid_derivative,integer,high,Number of carbonic acid derivative occurrences in the molecule
+carbonic_acid_monoester,integer,high,Number of carbonic acid monoester occurrences in the molecule
+carbonic_acid_diester,integer,high,Number of carbonic acid diester occurrences in the molecule
+carbonic_acid_ester_halide,integer,high,Number of carbonic acid ester halide occurrences in the molecule
+thiocarbonic_acid_derivative,integer,high,Number of thiocarbonic acid derivative occurrences in the molecule
+thiocarbonic_acid_monoester,integer,high,Number of thiocarbonic acid monoester occurrences in the molecule
+thiocarbonic_acid_diester,integer,high,Number of thiocarbonic acid diester occurrences in the molecule
+thiocarbonic_acid_ester_halide,integer,high,Number of thiocarbonic acid ester halide occurrences in the molecule
+carbamic_acid_derivative,integer,high,Number of carbamic acid derivative occurrences in the molecule
+carbamic_acid,integer,high,Number of carbamic acid occurrences in the molecule
+carbamic_acid_ester,integer,high,Number of carbamic acid ester occurrences in the molecule
+carbamic_acid_halide,integer,high,Number of carbamic acid halide occurrences in the molecule
+thiocarbamic_acid_derivative,integer,high,Number of thiocarbamic acid derivative occurrences in the molecule
+thiocarbamic_acid,integer,high,Number of thiocarbamic acid occurrences in the molecule
+thiocarbamic_acid_ester,integer,high,Number of thiocarbamic acid ester occurrences in the molecule
+thiocarbamic_acid_halide,integer,high,Number of thiocarbamic acid halide occurrences in the molecule
+urea,integer,high,Number of urea occurrences in the molecule
+isourea,integer,high,Number of isourea occurrences in the molecule
+thiourea,integer,high,Number of thiourea occurrences in the molecule
+isothiourea,integer,high,Number of isothiourea occurrences in the molecule
+guanidine,integer,high,Number of guanidine occurrences in the molecule
+semicarbazide,integer,high,Number of semicarbazide occurrences in the molecule
+thiosemicarbazide,integer,high,Number of thiosemicarbazide occurrences in the molecule
+azide,integer,high,Number of azide occurrences in the molecule
+azo_compound,integer,high,Number of azo compound occurrences in the molecule
+diazonium_salt,integer,high,Number of diazonium salt occurrences in the molecule
+isonitrile,integer,high,Number of isonitrile occurrences in the molecule
+cyanate,integer,high,Number of cyanate occurrences in the molecule
+isocyanate,integer,high,Number of isocyanate occurrences in the molecule
+thiocyanate,integer,high,Number of thiocyanate occurrences in the molecule
+isothiocyanate,integer,high,Number of isothiocyanate occurrences in the molecule
+carbodiimide,integer,high,Number of carbodiimide occurrences in the molecule
+nitroso_compound,integer,high,Number of nitroso compound occurrences in the molecule
+nitro_compound,integer,high,Number of nitro compound occurrences in the molecule
+nitrite,integer,high,Number of nitrite occurrences in the molecule
+nitrate,integer,high,Number of nitrate occurrences in the molecule
+sulfuric_acid_derivative,integer,high,Number of sulfuric acid derivative occurrences in the molecule
+sulfuric_acid,integer,high,Number of sulfuric acid occurrences in the molecule
+sulfuric_acid_monoester,integer,high,Number of sulfuric acid monoester occurrences in the molecule
+sulfuric_acid_diester,integer,high,Number of sulfuric acid diester occurrences in the molecule
+sulfuric_acid_amide_ester,integer,high,Number of sulfuric acid amide ester occurrences in the molecule
+sulfuric_acid_amide,integer,high,Number of sulfuric acid amide occurrences in the molecule
+sulfuric_acid_diamide,integer,high,Number of sulfuric acid diamide occurrences in the molecule
+sulfuryl_halide,integer,high,Number of sulfuryl halide occurrences in the molecule
+sulfonic_acid_derivative,integer,high,Number of sulfonic acid derivative occurrences in the molecule
+sulfonic_acid,integer,high,Number of sulfonic acid occurrences in the molecule
+sulfonic_acid_ester,integer,high,Number of sulfonic acid ester occurrences in the molecule
+sulfonamide,integer,high,Number of sulfonamide occurrences in the molecule
+sulfonyl_halide,integer,high,Number of sulfonyl halide occurrences in the molecule
+sulfone,integer,high,Number of sulfone occurrences in the molecule
+sulfoxide,integer,high,Number of sulfoxide occurrences in the molecule
+sulfinic_acid_derivative,integer,high,Number of sulfinic acid derivative occurrences in the molecule
+sulfinic_acid,integer,high,Number of sulfinic acid occurrences in the molecule
+sulfinic_acid_ester,integer,high,Number of sulfinic acid ester occurrences in the molecule
+sulfinic_acid_halide,integer,high,Number of sulfinic acid halide occurrences in the molecule
+sulfinic_acid_amide,integer,high,Number of sulfinic acid amide occurrences in the molecule
+sulfenic_acid_derivative,integer,high,Number of sulfenic acid derivative occurrences in the molecule
+sulfenic_acid,integer,high,Number of sulfenic acid occurrences in the molecule
+sulfenic_acid_ester,integer,high,Number of sulfenic acid ester occurrences in the molecule
+sulfenic_acid_halide,integer,high,Number of sulfenic acid halide occurrences in the molecule
+sulfenic_acid_amide,integer,high,Number of sulfenic acid amide occurrences in the molecule
+thiol,integer,high,Number of thiol occurrences in the molecule
+alkylthiol,integer,high,Number of alkylthiol occurrences in the molecule
+arylthiol,integer,high,Number of arylthiol occurrences in the molecule
+phosphoric_acid_derivative,integer,high,Number of phosphoric acid derivative occurrences in the molecule
+phosphoric_acid,integer,high,Number of phosphoric acid occurrences in the molecule
+phosphoric_acid_ester,integer,high,Number of phosphoric acid ester occurrences in the molecule
+phosphoric_acid_halide,integer,high,Number of phosphoric acid halide occurrences in the molecule
+phosphoric_acid_amide,integer,high,Number of phosphoric acid amide occurrences in the molecule
+thiophosphoric_acid_derivative,integer,high,Number of thiophosphoric acid derivative occurrences in the molecule
+thiophosphoric_acid,integer,high,Number of thiophosphoric acid occurrences in the molecule
+thiophosphoric_acid_ester,integer,high,Number of thiophosphoric acid ester occurrences in the molecule
+thiophosphoric_acid_halide,integer,high,Number of thiophosphoric acid halide occurrences in the molecule
+thiophosphoric_acid_amide,integer,high,Number of thiophosphoric acid amide occurrences in the molecule
+phosphonic_acid_derivative,integer,high,Number of phosphonic acid derivative occurrences in the molecule
+phosphonic_acid,integer,high,Number of phosphonic acid occurrences in the molecule
+phosphonic_acid_ester,integer,high,Number of phosphonic acid ester occurrences in the molecule
+phosphine,integer,high,Number of phosphine occurrences in the molecule
+phosphine_oxide,integer,high,Number of phosphine oxide occurrences in the molecule
+boronic_acid_derivative,integer,high,Number of boronic acid derivative occurrences in the molecule
+boronic_acid,integer,high,Number of boronic acid occurrences in the molecule
+boronic_acid_ester,integer,high,Number of boronic acid ester occurrences in the molecule
+alkene,integer,high,Number of alkene occurrences in the molecule
+alkyne,integer,high,Number of alkyne occurrences in the molecule
+aromatic_compound,integer,high,Number of aromatic compound occurrences in the molecule
+heterocyclic_compound,integer,high,Number of heterocyclic compound occurrences in the molecule
+alpha_aminoacid,integer,high,Number of alpha-aminoacid occurrences in the molecule
+alpha_hydroxyacid,integer,high,Number of alpha-hydroxyacid occurrences in the molecule
