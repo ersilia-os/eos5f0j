@@ -2,8 +2,7 @@
 
 CheckMol analyses a molecule for the presence of functional groups and structural elements, recognising ca. 200 distinct functional-group types; alcohols, carbonyls, carboxylic acids, amines, halides, heterocycles, and many more. For each input compound it returns a fixed-length vector of functional-group counts, providing an interpretable, rule-based molecular descriptor rather than an abstract learned embedding.
 
-This model was incorporated on 2026-06-02.
-
+This model was incorporated on 2026-06-02.Last packaged on 2026-06-02.
 
 ## Information
 ### Identifiers
@@ -44,12 +43,19 @@ _10 of 204 columns are shown_
 ### Source and Deployment
 - **Source:** `Local`
 - **Source Type:** `External`
+- **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos5f0j](https://hub.docker.com/r/ersiliaos/eos5f0j)
+- **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5f0j.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5f0j.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `4`
 - **Environment Size (Mb):** `518`
+- **Image Size (Mb):** `540.69`
 
+**Computational Performance (seconds):**
+- 10 inputs: `34.62`
+- 100 inputs: `24.9`
+- 10000 inputs: `58.81`
 
 ### References
 - **Source Code**: [https://homepage.univie.ac.at/norbert.haider/cheminf/cmmm.html](https://homepage.univie.ac.at/norbert.haider/cheminf/cmmm.html)
