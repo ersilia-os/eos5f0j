@@ -1,205 +1,205 @@
 name,type,direction,description
-cation,integer,,cation
-anion,integer,,anion
-carbonyl_compound,integer,,carbonyl compound
-aldehyde,integer,,aldehyde
-ketone,integer,,ketone
-thiocarbonyl_compound,integer,,thiocarbonyl compound
-thioaldehyde,integer,,thioaldehyde
-thioketone,integer,,thioketone
-imine,integer,,imine
-hydrazone,integer,,hydrazone
-semicarbazone,integer,,semicarbazone
-thiosemicarbazone,integer,,thiosemicarbazone
-oxime,integer,,oxime
-oxime_ether,integer,,oxime ether
-ketene,integer,,ketene
-ketene_acetal_or_derivative,integer,,ketene acetal or derivative
-carbonyl_hydrate,integer,,carbonyl hydrate
-hemiacetal,integer,,hemiacetal
-acetal,integer,,acetal
-hemiaminal,integer,,hemiaminal
-aminal,integer,,aminal
-hemithioaminal,integer,,hemithioaminal
-thioacetal,integer,,thioacetal
-enamine,integer,,enamine
-enol,integer,,enol
-enol_ether,integer,,enol ether
-hydroxy_compound,integer,,hydroxy compound
-alcohol,integer,,alcohol
-primary_alcohol,integer,,primary alcohol
-secondary_alcohol,integer,,secondary alcohol
-tertiary_alcohol,integer,,tertiary alcohol
-1_2_diol,integer,,1 2-diol
-1_2_aminoalcohol,integer,,1 2-aminoalcohol
-phenol_or_hydroxyhetarene,integer,,phenol or hydroxyhetarene
-1_2_diphenol,integer,,1 2-diphenol
-enediol,integer,,enediol
-ether,integer,,ether
-dialkyl_ether,integer,,dialkyl ether
-alkyl_aryl_ether,integer,,alkyl aryl ether
-diaryl_ether,integer,,diaryl ether
-thioether,integer,,thioether
-disulfide,integer,,disulfide
-peroxide,integer,,peroxide
-hydroperoxide,integer,,hydroperoxide
-hydrazine_derivative,integer,,hydrazine derivative
-hydroxylamine,integer,,hydroxylamine
-amine,integer,,amine
-primary_amine,integer,,primary amine
-primary_aliphatic_amine_alkylamine,integer,,primary aliphatic amine (alkylamine)
-primary_aromatic_amine,integer,,primary aromatic amine
-secondary_amine,integer,,secondary amine
-secondary_aliphatic_amine_dialkylamine,integer,,secondary aliphatic amine (dialkylamine)
-secondary_aliphatic_aromatic_amine_alkylarylamine,integer,,secondary aliphatic/aromatic amine (alkylarylamine)
-secondary_aromatic_amine_diarylamine,integer,,secondary aromatic amine (diarylamine)
-tertiary_amine,integer,,tertiary amine
-tertiary_aliphatic_amine_trialkylamine,integer,,tertiary aliphatic amine (trialkylamine)
-tertiary_aliphatic_aromatic_amine_alkylarylamine,integer,,tertiary aliphatic/aromatic amine (alkylarylamine)
-tertiary_aromatic_amine_triarylamine,integer,,tertiary aromatic amine (triarylamine)
-quaternary_ammonium_salt,integer,,quaternary ammonium salt
-n_oxide,integer,,N-oxide
-halogen_derivative,integer,,halogen derivative
-alkyl_halide,integer,,alkyl halide
-alkyl_fluoride,integer,,alkyl fluoride
-alkyl_chloride,integer,,alkyl chloride
-alkyl_bromide,integer,,alkyl bromide
-alkyl_iodide,integer,,alkyl iodide
-aryl_halide,integer,,aryl halide
-aryl_fluoride,integer,,aryl fluoride
-aryl_chloride,integer,,aryl chloride
-aryl_bromide,integer,,aryl bromide
-aryl_iodide,integer,,aryl iodide
-organometallic_compound,integer,,organometallic compound
-organolithium_compound,integer,,organolithium compound
-organomagnesium_compound,integer,,organomagnesium compound
-carboxylic_acid_derivative,integer,,carboxylic acid derivative
-carboxylic_acid,integer,,carboxylic acid
-carboxylic_acid_salt,integer,,carboxylic acid salt
-carboxylic_acid_ester,integer,,carboxylic acid ester
-lactone,integer,,lactone
-carboxylic_acid_amide,integer,,carboxylic acid amide
-primary_carboxylic_acid_amide,integer,,primary carboxylic acid amide
-secondary_carboxylic_acid_amide,integer,,secondary carboxylic acid amide
-tertiary_carboxylic_acid_amide,integer,,tertiary carboxylic acid amide
-lactam,integer,,lactam
-carboxylic_acid_hydrazide,integer,,carboxylic acid hydrazide
-carboxylic_acid_azide,integer,,carboxylic acid azide
-hydroxamic_acid,integer,,hydroxamic acid
-carboxylic_acid_amidine,integer,,carboxylic acid amidine
-carboxylic_acid_amidrazone,integer,,carboxylic acid amidrazone
-carbonitrile,integer,,carbonitrile
-acyl_halide,integer,,acyl halide
-acyl_fluoride,integer,,acyl fluoride
-acyl_chloride,integer,,acyl chloride
-acyl_bromide,integer,,acyl bromide
-acyl_iodide,integer,,acyl iodide
-acyl_cyanide,integer,,acyl cyanide
-imido_ester,integer,,imido ester
-imidoyl_halide,integer,,imidoyl halide
-thiocarboxylic_acid_derivative,integer,,thiocarboxylic acid derivative
-thiocarboxylic_acid,integer,,thiocarboxylic acid
-thiocarboxylic_acid_ester,integer,,thiocarboxylic acid ester
-thiolactone,integer,,thiolactone
-thiocarboxylic_acid_amide,integer,,thiocarboxylic acid amide
-thiolactam,integer,,thiolactam
-imidothioester,integer,,imidothioester
-oxo_het_arene,integer,,oxo(het)arene
-thioxo_het_arene,integer,,thioxo(het)arene
-imino_het_arene,integer,,imino(het)arene
-orthocarboxylic_acid_derivative,integer,,orthocarboxylic acid derivative
-orthoester,integer,,orthoester
-amide_acetal,integer,,amide acetal
-carboxylic_acid_anhydride,integer,,carboxylic acid anhydride
-carboxylic_acid_imide,integer,,carboxylic acid imide
-carboxylic_acid_imide_n_unsubstituted,integer,,carboxylic acid imide N-unsubstituted
-carboxylic_acid_imide_n_substituted,integer,,carboxylic acid imide N-substituted
-co2_derivative_general,integer,,CO2 derivative (general)
-carbonic_acid_derivative,integer,,carbonic acid derivative
-carbonic_acid_monoester,integer,,carbonic acid monoester
-carbonic_acid_diester,integer,,carbonic acid diester
-carbonic_acid_ester_halide_alkyl_aryl_haloformate,integer,,carbonic acid ester halide (alkyl/aryl haloformate)
-thiocarbonic_acid_derivative,integer,,thiocarbonic acid derivative
-thiocarbonic_acid_monoester,integer,,thiocarbonic acid monoester
-thiocarbonic_acid_diester,integer,,thiocarbonic acid diester
-thiocarbonic_acid_ester_halide_alkyl_aryl_halothioformate,integer,,thiocarbonic acid ester halide (alkyl/aryl halothioformate
-carbamic_acid_derivative,integer,,carbamic acid derivative
-carbamic_acid,integer,,carbamic acid
-carbamic_acid_ester_urethane,integer,,carbamic acid ester (urethane)
-carbamic_acid_halide_haloformic_acid_amide,integer,,carbamic acid halide (haloformic acid amide)
-thiocarbamic_acid_derivative,integer,,thiocarbamic acid derivative
-thiocarbamic_acid,integer,,thiocarbamic acid
-thiocarbamic_acid_ester,integer,,thiocarbamic acid ester
-thiocarbamic_acid_halide_halothioformic_acid_amide,integer,,thiocarbamic acid halide (halothioformic acid amide)
-urea,integer,,urea
-isourea,integer,,isourea
-thiourea,integer,,thiourea
-isothiourea,integer,,isothiourea
-guanidine,integer,,guanidine
-semicarbazide,integer,,semicarbazide
-thiosemicarbazide,integer,,thiosemicarbazide
-azide,integer,,azide
-azo_compound,integer,,azo compound
-diazonium_salt,integer,,diazonium salt
-isonitrile,integer,,isonitrile
-cyanate,integer,,cyanate
-isocyanate,integer,,isocyanate
-thiocyanate,integer,,thiocyanate
-isothiocyanate,integer,,isothiocyanate
-carbodiimide,integer,,carbodiimide
-nitroso_compound,integer,,nitroso compound
-nitro_compound,integer,,nitro compound
-nitrite,integer,,nitrite
-nitrate,integer,,nitrate
-sulfuric_acid_derivative,integer,,sulfuric acid derivative
-sulfuric_acid,integer,,sulfuric acid
-sulfuric_acid_monoester,integer,,sulfuric acid monoester
-sulfuric_acid_diester,integer,,sulfuric acid diester
-sulfuric_acid_amide_ester,integer,,sulfuric acid amide ester
-sulfuric_acid_amide,integer,,sulfuric acid amide
-sulfuric_acid_diamide,integer,,sulfuric acid diamide
-sulfuryl_halide,integer,,sulfuryl halide
-sulfonic_acid_derivative,integer,,sulfonic acid derivative
-sulfonic_acid,integer,,sulfonic acid
-sulfonic_acid_ester,integer,,sulfonic acid ester
-sulfonamide,integer,,sulfonamide
-sulfonyl_halide,integer,,sulfonyl halide
-sulfone,integer,,sulfone
-sulfoxide,integer,,sulfoxide
-sulfinic_acid_derivative,integer,,sulfinic acid derivative
-sulfinic_acid,integer,,sulfinic acid
-sulfinic_acid_ester,integer,,sulfinic acid ester
-sulfinic_acid_halide,integer,,sulfinic acid halide
-sulfinic_acid_amide,integer,,sulfinic acid amide
-sulfenic_acid_derivative,integer,,sulfenic acid derivative
-sulfenic_acid,integer,,sulfenic acid
-sulfenic_acid_ester,integer,,sulfenic acid ester
-sulfenic_acid_halide,integer,,sulfenic acid halide
-sulfenic_acid_amide,integer,,sulfenic acid amide
-thiol_sulfanyl_compound,integer,,thiol (sulfanyl compound)
-alkylthiol,integer,,alkylthiol
-arylthiol_thiophenol,integer,,arylthiol (thiophenol)
-phosphoric_acid_derivative,integer,,phosphoric acid derivative
-phosphoric_acid,integer,,phosphoric acid
-phosphoric_acid_ester,integer,,phosphoric acid ester
-phosphoric_acid_halide,integer,,phosphoric acid halide
-phosphoric_acid_amide,integer,,phosphoric acid amide
-thiophosphoric_acid_derivative,integer,,thiophosphoric acid derivative
-thiophosphoric_acid,integer,,thiophosphoric acid
-thiophosphoric_acid_ester,integer,,thiophosphoric acid ester
-thiophosphoric_acid_halide,integer,,thiophosphoric acid halide
-thiophosphoric_acid_amide,integer,,thiophosphoric acid amide
-phosphonic_acid_derivative,integer,,phosphonic acid derivative
-phosphonic_acid,integer,,phosphonic acid
-phosphonic_acid_ester,integer,,phosphonic acid ester
-phosphine,integer,,phosphine
-phosphine_oxide,integer,,phosphine oxide
-boronic_acid_derivative,integer,,boronic acid derivative
-boronic_acid,integer,,boronic acid
-boronic_acid_ester,integer,,boronic acid ester
-alkene,integer,,alkene
-alkyne,integer,,alkyne
-aromatic_compound,integer,,aromatic compound
-heterocyclic_compound,integer,,heterocyclic compound
-alpha_aminoacid,integer,,alpha-aminoacid
-alpha_hydroxyacid,integer,,alpha-hydroxyacid
+cation,integer,,Functional group: cation
+anion,integer,,Functional group: anion
+carbonyl_compound,integer,,Functional group: carbonyl compound
+aldehyde,integer,,Functional group: aldehyde
+ketone,integer,,Functional group: ketone
+thiocarbonyl_compound,integer,,Functional group: thiocarbonyl compound
+thioaldehyde,integer,,Functional group: thioaldehyde
+thioketone,integer,,Functional group: thioketone
+imine,integer,,Functional group: imine
+hydrazone,integer,,Functional group: hydrazone
+semicarbazone,integer,,Functional group: semicarbazone
+thiosemicarbazone,integer,,Functional group: thiosemicarbazone
+oxime,integer,,Functional group: oxime
+oxime_ether,integer,,Functional group: oxime ether
+ketene,integer,,Functional group: ketene
+ketene_acetal_or_derivative,integer,,Functional group: ketene acetal or derivative
+carbonyl_hydrate,integer,,Functional group: carbonyl hydrate
+hemiacetal,integer,,Functional group: hemiacetal
+acetal,integer,,Functional group: acetal
+hemiaminal,integer,,Functional group: hemiaminal
+aminal,integer,,Functional group: aminal
+hemithioaminal,integer,,Functional group: hemithioaminal
+thioacetal,integer,,Functional group: thioacetal
+enamine,integer,,Functional group: enamine
+enol,integer,,Functional group: enol
+enol_ether,integer,,Functional group: enol ether
+hydroxy_compound,integer,,Functional group: hydroxy compound
+alcohol,integer,,Functional group: alcohol
+primary_alcohol,integer,,Functional group: primary alcohol
+secondary_alcohol,integer,,Functional group: secondary alcohol
+tertiary_alcohol,integer,,Functional group: tertiary alcohol
+1_2_diol,integer,,Functional group: 1 2-diol
+1_2_aminoalcohol,integer,,Functional group: 1 2-aminoalcohol
+phenol_or_hydroxyhetarene,integer,,Functional group: phenol or hydroxyhetarene
+1_2_diphenol,integer,,Functional group: 1 2-diphenol
+enediol,integer,,Functional group: enediol
+ether,integer,,Functional group: ether
+dialkyl_ether,integer,,Functional group: dialkyl ether
+alkyl_aryl_ether,integer,,Functional group: alkyl aryl ether
+diaryl_ether,integer,,Functional group: diaryl ether
+thioether,integer,,Functional group: thioether
+disulfide,integer,,Functional group: disulfide
+peroxide,integer,,Functional group: peroxide
+hydroperoxide,integer,,Functional group: hydroperoxide
+hydrazine_derivative,integer,,Functional group: hydrazine derivative
+hydroxylamine,integer,,Functional group: hydroxylamine
+amine,integer,,Functional group: amine
+primary_amine,integer,,Functional group: primary amine
+primary_aliphatic_amine_alkylamine,integer,,Functional group: primary aliphatic amine (alkylamine)
+primary_aromatic_amine,integer,,Functional group: primary aromatic amine
+secondary_amine,integer,,Functional group: secondary amine
+secondary_aliphatic_amine_dialkylamine,integer,,Functional group: secondary aliphatic amine (dialkylamine)
+secondary_aliphatic_aromatic_amine_alkylarylamine,integer,,Functional group: secondary aliphatic/aromatic amine (alkylarylamine)
+secondary_aromatic_amine_diarylamine,integer,,Functional group: secondary aromatic amine (diarylamine)
+tertiary_amine,integer,,Functional group: tertiary amine
+tertiary_aliphatic_amine_trialkylamine,integer,,Functional group: tertiary aliphatic amine (trialkylamine)
+tertiary_aliphatic_aromatic_amine_alkylarylamine,integer,,Functional group: tertiary aliphatic/aromatic amine (alkylarylamine)
+tertiary_aromatic_amine_triarylamine,integer,,Functional group: tertiary aromatic amine (triarylamine)
+quaternary_ammonium_salt,integer,,Functional group: quaternary ammonium salt
+n_oxide,integer,,Functional group: N-oxide
+halogen_derivative,integer,,Functional group: halogen derivative
+alkyl_halide,integer,,Functional group: alkyl halide
+alkyl_fluoride,integer,,Functional group: alkyl fluoride
+alkyl_chloride,integer,,Functional group: alkyl chloride
+alkyl_bromide,integer,,Functional group: alkyl bromide
+alkyl_iodide,integer,,Functional group: alkyl iodide
+aryl_halide,integer,,Functional group: aryl halide
+aryl_fluoride,integer,,Functional group: aryl fluoride
+aryl_chloride,integer,,Functional group: aryl chloride
+aryl_bromide,integer,,Functional group: aryl bromide
+aryl_iodide,integer,,Functional group: aryl iodide
+organometallic_compound,integer,,Functional group: organometallic compound
+organolithium_compound,integer,,Functional group: organolithium compound
+organomagnesium_compound,integer,,Functional group: organomagnesium compound
+carboxylic_acid_derivative,integer,,Functional group: carboxylic acid derivative
+carboxylic_acid,integer,,Functional group: carboxylic acid
+carboxylic_acid_salt,integer,,Functional group: carboxylic acid salt
+carboxylic_acid_ester,integer,,Functional group: carboxylic acid ester
+lactone,integer,,Functional group: lactone
+carboxylic_acid_amide,integer,,Functional group: carboxylic acid amide
+primary_carboxylic_acid_amide,integer,,Functional group: primary carboxylic acid amide
+secondary_carboxylic_acid_amide,integer,,Functional group: secondary carboxylic acid amide
+tertiary_carboxylic_acid_amide,integer,,Functional group: tertiary carboxylic acid amide
+lactam,integer,,Functional group: lactam
+carboxylic_acid_hydrazide,integer,,Functional group: carboxylic acid hydrazide
+carboxylic_acid_azide,integer,,Functional group: carboxylic acid azide
+hydroxamic_acid,integer,,Functional group: hydroxamic acid
+carboxylic_acid_amidine,integer,,Functional group: carboxylic acid amidine
+carboxylic_acid_amidrazone,integer,,Functional group: carboxylic acid amidrazone
+carbonitrile,integer,,Functional group: carbonitrile
+acyl_halide,integer,,Functional group: acyl halide
+acyl_fluoride,integer,,Functional group: acyl fluoride
+acyl_chloride,integer,,Functional group: acyl chloride
+acyl_bromide,integer,,Functional group: acyl bromide
+acyl_iodide,integer,,Functional group: acyl iodide
+acyl_cyanide,integer,,Functional group: acyl cyanide
+imido_ester,integer,,Functional group: imido ester
+imidoyl_halide,integer,,Functional group: imidoyl halide
+thiocarboxylic_acid_derivative,integer,,Functional group: thiocarboxylic acid derivative
+thiocarboxylic_acid,integer,,Functional group: thiocarboxylic acid
+thiocarboxylic_acid_ester,integer,,Functional group: thiocarboxylic acid ester
+thiolactone,integer,,Functional group: thiolactone
+thiocarboxylic_acid_amide,integer,,Functional group: thiocarboxylic acid amide
+thiolactam,integer,,Functional group: thiolactam
+imidothioester,integer,,Functional group: imidothioester
+oxo_het_arene,integer,,Functional group: oxo(het)arene
+thioxo_het_arene,integer,,Functional group: thioxo(het)arene
+imino_het_arene,integer,,Functional group: imino(het)arene
+orthocarboxylic_acid_derivative,integer,,Functional group: orthocarboxylic acid derivative
+orthoester,integer,,Functional group: orthoester
+amide_acetal,integer,,Functional group: amide acetal
+carboxylic_acid_anhydride,integer,,Functional group: carboxylic acid anhydride
+carboxylic_acid_imide,integer,,Functional group: carboxylic acid imide
+carboxylic_acid_imide_n_unsubstituted,integer,,Functional group: carboxylic acid imide N-unsubstituted
+carboxylic_acid_imide_n_substituted,integer,,Functional group: carboxylic acid imide N-substituted
+co2_derivative_general,integer,,Functional group: CO2 derivative (general)
+carbonic_acid_derivative,integer,,Functional group: carbonic acid derivative
+carbonic_acid_monoester,integer,,Functional group: carbonic acid monoester
+carbonic_acid_diester,integer,,Functional group: carbonic acid diester
+carbonic_acid_ester_halide_alkyl_aryl_haloformate,integer,,Functional group: carbonic acid ester halide (alkyl/aryl haloformate)
+thiocarbonic_acid_derivative,integer,,Functional group: thiocarbonic acid derivative
+thiocarbonic_acid_monoester,integer,,Functional group: thiocarbonic acid monoester
+thiocarbonic_acid_diester,integer,,Functional group: thiocarbonic acid diester
+thiocarbonic_acid_ester_halide_alkyl_aryl_halothioformate,integer,,Functional group: thiocarbonic acid ester halide (alkyl/aryl halothioformate
+carbamic_acid_derivative,integer,,Functional group: carbamic acid derivative
+carbamic_acid,integer,,Functional group: carbamic acid
+carbamic_acid_ester_urethane,integer,,Functional group: carbamic acid ester (urethane)
+carbamic_acid_halide_haloformic_acid_amide,integer,,Functional group: carbamic acid halide (haloformic acid amide)
+thiocarbamic_acid_derivative,integer,,Functional group: thiocarbamic acid derivative
+thiocarbamic_acid,integer,,Functional group: thiocarbamic acid
+thiocarbamic_acid_ester,integer,,Functional group: thiocarbamic acid ester
+thiocarbamic_acid_halide_halothioformic_acid_amide,integer,,Functional group: thiocarbamic acid halide (halothioformic acid amide)
+urea,integer,,Functional group: urea
+isourea,integer,,Functional group: isourea
+thiourea,integer,,Functional group: thiourea
+isothiourea,integer,,Functional group: isothiourea
+guanidine,integer,,Functional group: guanidine
+semicarbazide,integer,,Functional group: semicarbazide
+thiosemicarbazide,integer,,Functional group: thiosemicarbazide
+azide,integer,,Functional group: azide
+azo_compound,integer,,Functional group: azo compound
+diazonium_salt,integer,,Functional group: diazonium salt
+isonitrile,integer,,Functional group: isonitrile
+cyanate,integer,,Functional group: cyanate
+isocyanate,integer,,Functional group: isocyanate
+thiocyanate,integer,,Functional group: thiocyanate
+isothiocyanate,integer,,Functional group: isothiocyanate
+carbodiimide,integer,,Functional group: carbodiimide
+nitroso_compound,integer,,Functional group: nitroso compound
+nitro_compound,integer,,Functional group: nitro compound
+nitrite,integer,,Functional group: nitrite
+nitrate,integer,,Functional group: nitrate
+sulfuric_acid_derivative,integer,,Functional group: sulfuric acid derivative
+sulfuric_acid,integer,,Functional group: sulfuric acid
+sulfuric_acid_monoester,integer,,Functional group: sulfuric acid monoester
+sulfuric_acid_diester,integer,,Functional group: sulfuric acid diester
+sulfuric_acid_amide_ester,integer,,Functional group: sulfuric acid amide ester
+sulfuric_acid_amide,integer,,Functional group: sulfuric acid amide
+sulfuric_acid_diamide,integer,,Functional group: sulfuric acid diamide
+sulfuryl_halide,integer,,Functional group: sulfuryl halide
+sulfonic_acid_derivative,integer,,Functional group: sulfonic acid derivative
+sulfonic_acid,integer,,Functional group: sulfonic acid
+sulfonic_acid_ester,integer,,Functional group: sulfonic acid ester
+sulfonamide,integer,,Functional group: sulfonamide
+sulfonyl_halide,integer,,Functional group: sulfonyl halide
+sulfone,integer,,Functional group: sulfone
+sulfoxide,integer,,Functional group: sulfoxide
+sulfinic_acid_derivative,integer,,Functional group: sulfinic acid derivative
+sulfinic_acid,integer,,Functional group: sulfinic acid
+sulfinic_acid_ester,integer,,Functional group: sulfinic acid ester
+sulfinic_acid_halide,integer,,Functional group: sulfinic acid halide
+sulfinic_acid_amide,integer,,Functional group: sulfinic acid amide
+sulfenic_acid_derivative,integer,,Functional group: sulfenic acid derivative
+sulfenic_acid,integer,,Functional group: sulfenic acid
+sulfenic_acid_ester,integer,,Functional group: sulfenic acid ester
+sulfenic_acid_halide,integer,,Functional group: sulfenic acid halide
+sulfenic_acid_amide,integer,,Functional group: sulfenic acid amide
+thiol_sulfanyl_compound,integer,,Functional group: thiol (sulfanyl compound)
+alkylthiol,integer,,Functional group: alkylthiol
+arylthiol_thiophenol,integer,,Functional group: arylthiol (thiophenol)
+phosphoric_acid_derivative,integer,,Functional group: phosphoric acid derivative
+phosphoric_acid,integer,,Functional group: phosphoric acid
+phosphoric_acid_ester,integer,,Functional group: phosphoric acid ester
+phosphoric_acid_halide,integer,,Functional group: phosphoric acid halide
+phosphoric_acid_amide,integer,,Functional group: phosphoric acid amide
+thiophosphoric_acid_derivative,integer,,Functional group: thiophosphoric acid derivative
+thiophosphoric_acid,integer,,Functional group: thiophosphoric acid
+thiophosphoric_acid_ester,integer,,Functional group: thiophosphoric acid ester
+thiophosphoric_acid_halide,integer,,Functional group: thiophosphoric acid halide
+thiophosphoric_acid_amide,integer,,Functional group: thiophosphoric acid amide
+phosphonic_acid_derivative,integer,,Functional group: phosphonic acid derivative
+phosphonic_acid,integer,,Functional group: phosphonic acid
+phosphonic_acid_ester,integer,,Functional group: phosphonic acid ester
+phosphine,integer,,Functional group: phosphine
+phosphine_oxide,integer,,Functional group: phosphine oxide
+boronic_acid_derivative,integer,,Functional group: boronic acid derivative
+boronic_acid,integer,,Functional group: boronic acid
+boronic_acid_ester,integer,,Functional group: boronic acid ester
+alkene,integer,,Functional group: alkene
+alkyne,integer,,Functional group: alkyne
+aromatic_compound,integer,,Functional group: aromatic compound
+heterocyclic_compound,integer,,Functional group: heterocyclic compound
+alpha_aminoacid,integer,,Functional group: alpha-aminoacid
+alpha_hydroxyacid,integer,,Functional group: alpha-hydroxyacid
