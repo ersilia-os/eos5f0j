@@ -1,0 +1,205 @@
+feature,fg_number,code,name
+cation,1,000000T2,cation
+anion,2,000000T1,anion
+carbonyl_compound,3,C2O10000,carbonyl compound
+aldehyde,4,C2O1H000,aldehyde
+ketone,5,C2O1C000,ketone
+thiocarbonyl_compound,6,C2S10000,thiocarbonyl compound
+thioaldehyde,7,C2S1H000,thioaldehyde
+thioketone,8,C2S1C000,thioketone
+imine,9,C2N10000,imine
+hydrazone,10,C2N1N000,hydrazone
+semicarbazone,11,C2NNC4ON,semicarbazone
+thiosemicarbazone,12,C2NNC4SN,thiosemicarbazone
+oxime,13,C2N1OH00,oxime
+oxime_ether,14,C2N1OC00,oxime ether
+ketene,15,C3OC0000,ketene
+ketene_acetal_or_derivative,16,C3OCC000,ketene acetal or derivative
+carbonyl_hydrate,17,C2O2H200,carbonyl hydrate
+hemiacetal,18,C2O2HC00,hemiacetal
+acetal,19,C2O2CC00,acetal
+hemiaminal,20,C2NOHC10,hemiaminal
+aminal,21,C2N2CC10,aminal
+hemithioaminal,22,C2NSHC10,hemithioaminal
+thioacetal,23,C2S2CC00,thioacetal
+enamine,24,C2CNH000,enamine
+enol,25,C2COH000,enol
+enol_ether,26,C2COH000,enol ether
+hydroxy_compound,27,O1H00000,hydroxy compound
+alcohol,28,O1H0C000,alcohol
+primary_alcohol,29,O1H1C000,primary alcohol
+secondary_alcohol,30,O1H2C000,secondary alcohol
+tertiary_alcohol,31,O1H3C000,tertiary alcohol
+1_2_diol,32,O1H0CO1H,"1,2-diol"
+1_2_aminoalcohol,33,O1H0CN1C,"1,2-aminoalcohol"
+phenol_or_hydroxyhetarene,34,O1H1A000,phenol or hydroxyhetarene
+1_2_diphenol,35,O1H2A000,"1,2-diphenol"
+enediol,36,C2COH200,enediol
+ether,37,O1C00000,ether
+dialkyl_ether,38,O1C0CC00,dialkyl ether
+alkyl_aryl_ether,39,O1C0CA00,alkyl aryl ether
+diaryl_ether,40,O1C0AA00,diaryl ether
+thioether,41,S1C00000,thioether
+disulfide,42,S1S1C000,disulfide
+peroxide,43,O1O1C000,peroxide
+hydroperoxide,44,O1O1H000,hydroperoxide
+hydrazine_derivative,45,N1N10000,hydrazine derivative
+hydroxylamine,46,N1O1H000,hydroxylamine
+amine,47,N1C00000,amine
+primary_amine,48,N1C10000,primary amine
+primary_aliphatic_amine_alkylamine,49,N1C1C000,primary aliphatic amine (alkylamine)
+primary_aromatic_amine,50,N1C1A000,primary aromatic amine
+secondary_amine,51,N1C20000,secondary amine
+secondary_aliphatic_amine_dialkylamine,52,N1C2CC00,secondary aliphatic amine (dialkylamine)
+secondary_aliphatic_aromatic_amine_alkylarylamine,53,N1C2AC00,secondary aliphatic/aromatic amine (alkylarylamine)
+secondary_aromatic_amine_diarylamine,54,N1C2AA00,secondary aromatic amine (diarylamine)
+tertiary_amine,55,N1C30000,tertiary amine
+tertiary_aliphatic_amine_trialkylamine,56,N1C3CC00,tertiary aliphatic amine (trialkylamine)
+tertiary_aliphatic_aromatic_amine_alkylarylamine,57,N1C3AC00,tertiary aliphatic/aromatic amine (alkylarylamine)
+tertiary_aromatic_amine_triarylamine,58,N1C3AA00,tertiary aromatic amine (triarylamine)
+quaternary_ammonium_salt,59,N1C400T2,quaternary ammonium salt
+n_oxide,60,N0O10000,N-oxide
+halogen_derivative,61,XX000000,halogen derivative
+alkyl_halide,62,XX00C000,alkyl halide
+alkyl_fluoride,63,XF00C000,alkyl fluoride
+alkyl_chloride,64,XC00C000,alkyl chloride
+alkyl_bromide,65,XB00C000,alkyl bromide
+alkyl_iodide,66,XI00C000,alkyl iodide
+aryl_halide,67,XX00A000,aryl halide
+aryl_fluoride,68,XF00A000,aryl fluoride
+aryl_chloride,69,XC00A000,aryl chloride
+aryl_bromide,70,XB00A000,aryl bromide
+aryl_iodide,71,XI00A000,aryl iodide
+organometallic_compound,72,000000MX,organometallic compound
+organolithium_compound,73,000000ML,organolithium compound
+organomagnesium_compound,74,000000MM,organomagnesium compound
+carboxylic_acid_derivative,75,C3O20000,carboxylic acid derivative
+carboxylic_acid,76,C3O2H000,carboxylic acid
+carboxylic_acid_salt,77,C3O200T1,carboxylic acid salt
+carboxylic_acid_ester,78,C3O2C000,carboxylic acid ester
+lactone,79,C3O2CZ00,lactone
+carboxylic_acid_amide,80,C3ONC000,carboxylic acid amide
+primary_carboxylic_acid_amide,81,C3ONC100,primary carboxylic acid amide
+secondary_carboxylic_acid_amide,82,C3ONC200,secondary carboxylic acid amide
+tertiary_carboxylic_acid_amide,83,C3ONC300,tertiary carboxylic acid amide
+lactam,84,C3ONCZ00,lactam
+carboxylic_acid_hydrazide,85,C3ONN100,carboxylic acid hydrazide
+carboxylic_acid_azide,86,C3ONN200,carboxylic acid azide
+hydroxamic_acid,87,C3ONOH00,hydroxamic acid
+carboxylic_acid_amidine,88,C3N2H000,carboxylic acid amidine
+carboxylic_acid_amidrazone,89,C3NNN100,carboxylic acid amidrazone
+carbonitrile,90,C3N00000,carbonitrile
+acyl_halide,91,C3OXX000,acyl halide
+acyl_fluoride,92,C3OXF000,acyl fluoride
+acyl_chloride,93,C3OXC000,acyl chloride
+acyl_bromide,94,C3OXB000,acyl bromide
+acyl_iodide,95,C3OXI000,acyl iodide
+acyl_cyanide,96,C2OC3N00,acyl cyanide
+imido_ester,97,C3NOC000,imido ester
+imidoyl_halide,98,C3NXX000,imidoyl halide
+thiocarboxylic_acid_derivative,99,C3SO0000,thiocarboxylic acid derivative
+thiocarboxylic_acid,100,C3SOH000,thiocarboxylic acid
+thiocarboxylic_acid_ester,101,C3SOC000,thiocarboxylic acid ester
+thiolactone,102,C3SOCZ00,thiolactone
+thiocarboxylic_acid_amide,103,C3SNH000,thiocarboxylic acid amide
+thiolactam,104,C3SNCZ00,thiolactam
+imidothioester,105,C3NSC000,imidothioester
+oxo_het_arene,106,C3ONAZ00,oxo(het)arene
+thioxo_het_arene,107,C3SNAZ00,thioxo(het)arene
+imino_het_arene,108,C3NNAZ00,imino(het)arene
+orthocarboxylic_acid_derivative,109,C3O30000,orthocarboxylic acid derivative
+orthoester,110,C3O3C000,orthoester
+amide_acetal,111,C3O3NC00,amide acetal
+carboxylic_acid_anhydride,112,C3O2C3O2,carboxylic acid anhydride
+carboxylic_acid_imide,113,C3ONC000,carboxylic acid imide
+carboxylic_acid_imide_n_unsubstituted,114,C3ONCH10,"carboxylic acid imide, N-unsubstituted"
+carboxylic_acid_imide_n_substituted,115,C3ONCC10,"carboxylic acid imide, N-substituted"
+co2_derivative_general,116,C4000000,CO2 derivative (general)
+carbonic_acid_derivative,117,C4O30000,carbonic acid derivative
+carbonic_acid_monoester,118,C4O3C100,carbonic acid monoester
+carbonic_acid_diester,119,C4O3C200,carbonic acid diester
+carbonic_acid_ester_halide_alkyl_aryl_haloformate,120,C4O3CX00,carbonic acid ester halide (alkyl/aryl haloformate)
+thiocarbonic_acid_derivative,121,C4SO0000,thiocarbonic acid derivative
+thiocarbonic_acid_monoester,122,C4SOC100,thiocarbonic acid monoester
+thiocarbonic_acid_diester,123,C4SOC200,thiocarbonic acid diester
+thiocarbonic_acid_ester_halide_alkyl_aryl_halothioformate,124,C4SOX_00,thiocarbonic acid ester halide (alkyl/aryl halothioformate
+carbamic_acid_derivative,125,C4O2N000,carbamic acid derivative
+carbamic_acid,126,C4O2NH00,carbamic acid
+carbamic_acid_ester_urethane,127,C4O2NC00,carbamic acid ester (urethane)
+carbamic_acid_halide_haloformic_acid_amide,128,C4O2NX00,carbamic acid halide (haloformic acid amide)
+thiocarbamic_acid_derivative,129,C4SN0000,thiocarbamic acid derivative
+thiocarbamic_acid,130,C4SNOH00,thiocarbamic acid
+thiocarbamic_acid_ester,131,C4SNOC00,thiocarbamic acid ester
+thiocarbamic_acid_halide_halothioformic_acid_amide,132,C4SNXX00,thiocarbamic acid halide (halothioformic acid amide)
+urea,133,C4O1N200,urea
+isourea,134,C4N2O100,isourea
+thiourea,135,C4S1N200,thiourea
+isothiourea,136,C4N2S100,isothiourea
+guanidine,137,C4N30000,guanidine
+semicarbazide,138,C4ON2N00,semicarbazide
+thiosemicarbazide,139,C4SN2N00,thiosemicarbazide
+azide,140,N4N20000,azide
+azo_compound,141,N2N10000,azo compound
+diazonium_salt,142,N3N100T2,diazonium salt
+isonitrile,143,N3C10000,isonitrile
+cyanate,144,C4NO1000,cyanate
+isocyanate,145,C4NO2000,isocyanate
+thiocyanate,146,C4NS1000,thiocyanate
+isothiocyanate,147,C4NS2000,isothiocyanate
+carbodiimide,148,C4N20000,carbodiimide
+nitroso_compound,149,N2O10000,nitroso compound
+nitro_compound,150,N4O20000,nitro compound
+nitrite,151,N3O20000,nitrite
+nitrate,152,N4O30000,nitrate
+sulfuric_acid_derivative,153,S6O00000,sulfuric acid derivative
+sulfuric_acid,154,S6O4H000,sulfuric acid
+sulfuric_acid_monoester,155,S6O4HC00,sulfuric acid monoester
+sulfuric_acid_diester,156,S6O4CC00,sulfuric acid diester
+sulfuric_acid_amide_ester,157,S6O3NC00,sulfuric acid amide ester
+sulfuric_acid_amide,158,S6O3N100,sulfuric acid amide
+sulfuric_acid_diamide,159,S6O2N200,sulfuric acid diamide
+sulfuryl_halide,160,S6O3XX00,sulfuryl halide
+sulfonic_acid_derivative,161,S5O00000,sulfonic acid derivative
+sulfonic_acid,162,S5O3H000,sulfonic acid
+sulfonic_acid_ester,163,S5O3C000,sulfonic acid ester
+sulfonamide,164,S5O2N000,sulfonamide
+sulfonyl_halide,165,S5O2XX00,sulfonyl halide
+sulfone,166,S4O20000,sulfone
+sulfoxide,167,S2O10000,sulfoxide
+sulfinic_acid_derivative,168,S3O00000,sulfinic acid derivative
+sulfinic_acid,169,S3O2H000,sulfinic acid
+sulfinic_acid_ester,170,S3O2C000,sulfinic acid ester
+sulfinic_acid_halide,171,S3O1XX00,sulfinic acid halide
+sulfinic_acid_amide,172,S3O1N000,sulfinic acid amide
+sulfenic_acid_derivative,173,S1O00000,sulfenic acid derivative
+sulfenic_acid,174,S1O1H000,sulfenic acid
+sulfenic_acid_ester,175,S1O1C000,sulfenic acid ester
+sulfenic_acid_halide,176,S1O0XX00,sulfenic acid halide
+sulfenic_acid_amide,177,S1O0N100,sulfenic acid amide
+thiol_sulfanyl_compound,178,S1H10000,thiol (sulfanyl compound)
+alkylthiol,179,S1H1C000,alkylthiol
+arylthiol_thiophenol,180,S1H1A000,arylthiol (thiophenol)
+phosphoric_acid_derivative,181,P5O0H000,phosphoric acid derivative
+phosphoric_acid,182,P5O4H200,phosphoric acid
+phosphoric_acid_ester,183,P5O4HC00,phosphoric acid ester
+phosphoric_acid_halide,184,P5O3HX00,phosphoric acid halide
+phosphoric_acid_amide,185,P5O3HN00,phosphoric acid amide
+thiophosphoric_acid_derivative,186,P5O0S000,thiophosphoric acid derivative
+thiophosphoric_acid,187,P5O3SH00,thiophosphoric acid
+thiophosphoric_acid_ester,188,P5O3SC00,thiophosphoric acid ester
+thiophosphoric_acid_halide,189,P5O2SX00,thiophosphoric acid halide
+thiophosphoric_acid_amide,190,P5O2SN00,thiophosphoric acid amide
+phosphonic_acid_derivative,191,P4O30000,phosphonic acid derivative
+phosphonic_acid,192,P4O3H000,phosphonic acid
+phosphonic_acid_ester,193,P4O3C000,phosphonic acid ester
+phosphine,194,P3000000,phosphine
+phosphine_oxide,195,P2O00000,phosphine oxide
+boronic_acid_derivative,196,B2O20000,boronic acid derivative
+boronic_acid,197,B2O2H000,boronic acid
+boronic_acid_ester,198,B2O2C000,boronic acid ester
+alkene,199,000C2C00,alkene
+alkyne,200,000C3C00,alkyne
+aromatic_compound,201,0000A000,aromatic compound
+heterocyclic_compound,202,0000CZ00,heterocyclic compound
+alpha_aminoacid,203,C3O2HN1C,alpha-aminoacid
+alpha_hydroxyacid,204,C3O2HO1H,alpha-hydroxyacid

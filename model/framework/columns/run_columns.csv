@@ -1,1 +1,205 @@
 name,type,direction,description
+cation,integer,,cation
+anion,integer,,anion
+carbonyl_compound,integer,,carbonyl compound
+aldehyde,integer,,aldehyde
+ketone,integer,,ketone
+thiocarbonyl_compound,integer,,thiocarbonyl compound
+thioaldehyde,integer,,thioaldehyde
+thioketone,integer,,thioketone
+imine,integer,,imine
+hydrazone,integer,,hydrazone
+semicarbazone,integer,,semicarbazone
+thiosemicarbazone,integer,,thiosemicarbazone
+oxime,integer,,oxime
+oxime_ether,integer,,oxime ether
+ketene,integer,,ketene
+ketene_acetal_or_derivative,integer,,ketene acetal or derivative
+carbonyl_hydrate,integer,,carbonyl hydrate
+hemiacetal,integer,,hemiacetal
+acetal,integer,,acetal
+hemiaminal,integer,,hemiaminal
+aminal,integer,,aminal
+hemithioaminal,integer,,hemithioaminal
+thioacetal,integer,,thioacetal
+enamine,integer,,enamine
+enol,integer,,enol
+enol_ether,integer,,enol ether
+hydroxy_compound,integer,,hydroxy compound
+alcohol,integer,,alcohol
+primary_alcohol,integer,,primary alcohol
+secondary_alcohol,integer,,secondary alcohol
+tertiary_alcohol,integer,,tertiary alcohol
+1_2_diol,integer,,1 2-diol
+1_2_aminoalcohol,integer,,1 2-aminoalcohol
+phenol_or_hydroxyhetarene,integer,,phenol or hydroxyhetarene
+1_2_diphenol,integer,,1 2-diphenol
+enediol,integer,,enediol
+ether,integer,,ether
+dialkyl_ether,integer,,dialkyl ether
+alkyl_aryl_ether,integer,,alkyl aryl ether
+diaryl_ether,integer,,diaryl ether
+thioether,integer,,thioether
+disulfide,integer,,disulfide
+peroxide,integer,,peroxide
+hydroperoxide,integer,,hydroperoxide
+hydrazine_derivative,integer,,hydrazine derivative
+hydroxylamine,integer,,hydroxylamine
+amine,integer,,amine
+primary_amine,integer,,primary amine
+primary_aliphatic_amine_alkylamine,integer,,primary aliphatic amine (alkylamine)
+primary_aromatic_amine,integer,,primary aromatic amine
+secondary_amine,integer,,secondary amine
+secondary_aliphatic_amine_dialkylamine,integer,,secondary aliphatic amine (dialkylamine)
+secondary_aliphatic_aromatic_amine_alkylarylamine,integer,,secondary aliphatic/aromatic amine (alkylarylamine)
+secondary_aromatic_amine_diarylamine,integer,,secondary aromatic amine (diarylamine)
+tertiary_amine,integer,,tertiary amine
+tertiary_aliphatic_amine_trialkylamine,integer,,tertiary aliphatic amine (trialkylamine)
+tertiary_aliphatic_aromatic_amine_alkylarylamine,integer,,tertiary aliphatic/aromatic amine (alkylarylamine)
+tertiary_aromatic_amine_triarylamine,integer,,tertiary aromatic amine (triarylamine)
+quaternary_ammonium_salt,integer,,quaternary ammonium salt
+n_oxide,integer,,N-oxide
+halogen_derivative,integer,,halogen derivative
+alkyl_halide,integer,,alkyl halide
+alkyl_fluoride,integer,,alkyl fluoride
+alkyl_chloride,integer,,alkyl chloride
+alkyl_bromide,integer,,alkyl bromide
+alkyl_iodide,integer,,alkyl iodide
+aryl_halide,integer,,aryl halide
+aryl_fluoride,integer,,aryl fluoride
+aryl_chloride,integer,,aryl chloride
+aryl_bromide,integer,,aryl bromide
+aryl_iodide,integer,,aryl iodide
+organometallic_compound,integer,,organometallic compound
+organolithium_compound,integer,,organolithium compound
+organomagnesium_compound,integer,,organomagnesium compound
+carboxylic_acid_derivative,integer,,carboxylic acid derivative
+carboxylic_acid,integer,,carboxylic acid
+carboxylic_acid_salt,integer,,carboxylic acid salt
+carboxylic_acid_ester,integer,,carboxylic acid ester
+lactone,integer,,lactone
+carboxylic_acid_amide,integer,,carboxylic acid amide
+primary_carboxylic_acid_amide,integer,,primary carboxylic acid amide
+secondary_carboxylic_acid_amide,integer,,secondary carboxylic acid amide
+tertiary_carboxylic_acid_amide,integer,,tertiary carboxylic acid amide
+lactam,integer,,lactam
+carboxylic_acid_hydrazide,integer,,carboxylic acid hydrazide
+carboxylic_acid_azide,integer,,carboxylic acid azide
+hydroxamic_acid,integer,,hydroxamic acid
+carboxylic_acid_amidine,integer,,carboxylic acid amidine
+carboxylic_acid_amidrazone,integer,,carboxylic acid amidrazone
+carbonitrile,integer,,carbonitrile
+acyl_halide,integer,,acyl halide
+acyl_fluoride,integer,,acyl fluoride
+acyl_chloride,integer,,acyl chloride
+acyl_bromide,integer,,acyl bromide
+acyl_iodide,integer,,acyl iodide
+acyl_cyanide,integer,,acyl cyanide
+imido_ester,integer,,imido ester
+imidoyl_halide,integer,,imidoyl halide
+thiocarboxylic_acid_derivative,integer,,thiocarboxylic acid derivative
+thiocarboxylic_acid,integer,,thiocarboxylic acid
+thiocarboxylic_acid_ester,integer,,thiocarboxylic acid ester
+thiolactone,integer,,thiolactone
+thiocarboxylic_acid_amide,integer,,thiocarboxylic acid amide
+thiolactam,integer,,thiolactam
+imidothioester,integer,,imidothioester
+oxo_het_arene,integer,,oxo(het)arene
+thioxo_het_arene,integer,,thioxo(het)arene
+imino_het_arene,integer,,imino(het)arene
+orthocarboxylic_acid_derivative,integer,,orthocarboxylic acid derivative
+orthoester,integer,,orthoester
+amide_acetal,integer,,amide acetal
+carboxylic_acid_anhydride,integer,,carboxylic acid anhydride
+carboxylic_acid_imide,integer,,carboxylic acid imide
+carboxylic_acid_imide_n_unsubstituted,integer,,carboxylic acid imide N-unsubstituted
+carboxylic_acid_imide_n_substituted,integer,,carboxylic acid imide N-substituted
+co2_derivative_general,integer,,CO2 derivative (general)
+carbonic_acid_derivative,integer,,carbonic acid derivative
+carbonic_acid_monoester,integer,,carbonic acid monoester
+carbonic_acid_diester,integer,,carbonic acid diester
+carbonic_acid_ester_halide_alkyl_aryl_haloformate,integer,,carbonic acid ester halide (alkyl/aryl haloformate)
+thiocarbonic_acid_derivative,integer,,thiocarbonic acid derivative
+thiocarbonic_acid_monoester,integer,,thiocarbonic acid monoester
+thiocarbonic_acid_diester,integer,,thiocarbonic acid diester
+thiocarbonic_acid_ester_halide_alkyl_aryl_halothioformate,integer,,thiocarbonic acid ester halide (alkyl/aryl halothioformate
+carbamic_acid_derivative,integer,,carbamic acid derivative
+carbamic_acid,integer,,carbamic acid
+carbamic_acid_ester_urethane,integer,,carbamic acid ester (urethane)
+carbamic_acid_halide_haloformic_acid_amide,integer,,carbamic acid halide (haloformic acid amide)
+thiocarbamic_acid_derivative,integer,,thiocarbamic acid derivative
+thiocarbamic_acid,integer,,thiocarbamic acid
+thiocarbamic_acid_ester,integer,,thiocarbamic acid ester
+thiocarbamic_acid_halide_halothioformic_acid_amide,integer,,thiocarbamic acid halide (halothioformic acid amide)
+urea,integer,,urea
+isourea,integer,,isourea
+thiourea,integer,,thiourea
+isothiourea,integer,,isothiourea
+guanidine,integer,,guanidine
+semicarbazide,integer,,semicarbazide
+thiosemicarbazide,integer,,thiosemicarbazide
+azide,integer,,azide
+azo_compound,integer,,azo compound
+diazonium_salt,integer,,diazonium salt
+isonitrile,integer,,isonitrile
+cyanate,integer,,cyanate
+isocyanate,integer,,isocyanate
+thiocyanate,integer,,thiocyanate
+isothiocyanate,integer,,isothiocyanate
+carbodiimide,integer,,carbodiimide
+nitroso_compound,integer,,nitroso compound
+nitro_compound,integer,,nitro compound
+nitrite,integer,,nitrite
+nitrate,integer,,nitrate
+sulfuric_acid_derivative,integer,,sulfuric acid derivative
+sulfuric_acid,integer,,sulfuric acid
+sulfuric_acid_monoester,integer,,sulfuric acid monoester
+sulfuric_acid_diester,integer,,sulfuric acid diester
+sulfuric_acid_amide_ester,integer,,sulfuric acid amide ester
+sulfuric_acid_amide,integer,,sulfuric acid amide
+sulfuric_acid_diamide,integer,,sulfuric acid diamide
+sulfuryl_halide,integer,,sulfuryl halide
+sulfonic_acid_derivative,integer,,sulfonic acid derivative
+sulfonic_acid,integer,,sulfonic acid
+sulfonic_acid_ester,integer,,sulfonic acid ester
+sulfonamide,integer,,sulfonamide
+sulfonyl_halide,integer,,sulfonyl halide
+sulfone,integer,,sulfone
+sulfoxide,integer,,sulfoxide
+sulfinic_acid_derivative,integer,,sulfinic acid derivative
+sulfinic_acid,integer,,sulfinic acid
+sulfinic_acid_ester,integer,,sulfinic acid ester
+sulfinic_acid_halide,integer,,sulfinic acid halide
+sulfinic_acid_amide,integer,,sulfinic acid amide
+sulfenic_acid_derivative,integer,,sulfenic acid derivative
+sulfenic_acid,integer,,sulfenic acid
+sulfenic_acid_ester,integer,,sulfenic acid ester
+sulfenic_acid_halide,integer,,sulfenic acid halide
+sulfenic_acid_amide,integer,,sulfenic acid amide
+thiol_sulfanyl_compound,integer,,thiol (sulfanyl compound)
+alkylthiol,integer,,alkylthiol
+arylthiol_thiophenol,integer,,arylthiol (thiophenol)
+phosphoric_acid_derivative,integer,,phosphoric acid derivative
+phosphoric_acid,integer,,phosphoric acid
+phosphoric_acid_ester,integer,,phosphoric acid ester
+phosphoric_acid_halide,integer,,phosphoric acid halide
+phosphoric_acid_amide,integer,,phosphoric acid amide
+thiophosphoric_acid_derivative,integer,,thiophosphoric acid derivative
+thiophosphoric_acid,integer,,thiophosphoric acid
+thiophosphoric_acid_ester,integer,,thiophosphoric acid ester
+thiophosphoric_acid_halide,integer,,thiophosphoric acid halide
+thiophosphoric_acid_amide,integer,,thiophosphoric acid amide
+phosphonic_acid_derivative,integer,,phosphonic acid derivative
+phosphonic_acid,integer,,phosphonic acid
+phosphonic_acid_ester,integer,,phosphonic acid ester
+phosphine,integer,,phosphine
+phosphine_oxide,integer,,phosphine oxide
+boronic_acid_derivative,integer,,boronic acid derivative
+boronic_acid,integer,,boronic acid
+boronic_acid_ester,integer,,boronic acid ester
+alkene,integer,,alkene
+alkyne,integer,,alkyne
+aromatic_compound,integer,,aromatic compound
+heterocyclic_compound,integer,,heterocyclic compound
+alpha_aminoacid,integer,,alpha-aminoacid
+alpha_hydroxyacid,integer,,alpha-hydroxyacid
