@@ -22,8 +22,8 @@ Output:
   - Value
 Output Dimension: 204
 Output Consistency: Fixed
-Interpretation: Each of the 204 outputs is the number of times a given CheckMol
-  functional-group type is detected in the molecule (0 if absent). Unparseable
+Interpretation: Each of the 204 outputs is the number of times a given CheckMol 
+  functional-group type is detected in the molecule (0 if absent). Unparseable 
   inputs return empty values.
 Tag:
   - Fingerprint
@@ -37,3 +37,4 @@ Publication: https://doi.org/10.3390/molecules15085079
 Source Code: https://homepage.univie.ac.at/norbert.haider/cheminf/cmmm.html
 License: GPL-3.0-or-later
 Contributor: miquelduranfrigola
+Incorporation Date: '2026-06-02'
