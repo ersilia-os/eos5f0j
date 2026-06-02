@@ -29,16 +29,16 @@ This model was incorporated on 2026-06-02.
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
 |------|------|-----------|-------------|
-| cation | integer |  | Functional group: cation (charges) |
-| anion | integer |  | Functional group: anion (charges) |
-| carbonyl_compound | integer |  | Functional group: carbonyl compound (carbonyl-type) |
-| aldehyde | integer |  | Functional group: aldehyde (carbonyl-type) |
-| ketone | integer |  | Functional group: ketone (carbonyl-type) |
-| thiocarbonyl_compound | integer |  | Functional group: thiocarbonyl compound (carbonyl-type) |
-| thioaldehyde | integer |  | Functional group: thioaldehyde (carbonyl-type) |
-| thioketone | integer |  | Functional group: thioketone (carbonyl-type) |
-| imine | integer |  | Functional group: imine (carbonyl-type) |
-| hydrazone | integer |  | Functional group: hydrazone (carbonyl-type) |
+| cation | integer | high | Number of cation occurrences detected by CheckMol in the molecule (0 if absent) |
+| anion | integer | high | Number of anion occurrences detected by CheckMol in the molecule (0 if absent) |
+| carbonyl_compound | integer | high | Number of carbonyl compound occurrences detected by CheckMol in the molecule (0 if absent) |
+| aldehyde | integer | high | Number of aldehyde occurrences detected by CheckMol in the molecule (0 if absent) |
+| ketone | integer | high | Number of ketone occurrences detected by CheckMol in the molecule (0 if absent) |
+| thiocarbonyl_compound | integer | high | Number of thiocarbonyl compound occurrences detected by CheckMol in the molecule (0 if absent) |
+| thioaldehyde | integer | high | Number of thioaldehyde occurrences detected by CheckMol in the molecule (0 if absent) |
+| thioketone | integer | high | Number of thioketone occurrences detected by CheckMol in the molecule (0 if absent) |
+| imine | integer | high | Number of imine occurrences detected by CheckMol in the molecule (0 if absent) |
+| hydrazone | integer | high | Number of hydrazone occurrences detected by CheckMol in the molecule (0 if absent) |
 
 _10 of 204 columns are shown_
 ### Source and Deployment
