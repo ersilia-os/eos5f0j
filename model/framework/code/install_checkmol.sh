@@ -88,9 +88,26 @@ echo "Using Free Pascal compiler: $FPC_BIN"
 fetch "$CHECKMOL_URL" "$WORK/checkmol.pas"
 
 # 5. Compile checkmol. Delphi mode (-S2) is REQUIRED by the source. Build inside
-#    the scratch dir (keeps .o/.ppu artifacts out of the model) then move the
-#    executable into the model code directory.
+#    the scratch dir (keeps .o/.ppu artifacts out of the model).
 ( cd "$WORK" && "$FPC_BIN" -S2 -O2 checkmol.pas )
-mv "$WORK/checkmol" "$OUT"
+
+# 6. Install the binary where main.py's find_checkmol() will see it. We install
+#    to TWO places so it is found no matter which copy of run.sh is executed:
+#      - next to main.py (this code dir): used by the packed model bundle.
+#      - the Python environment's bin: shared by every interpreter-launched run
+#        (e.g. `conda run bash run.sh` from the source checkout during testing),
+#        found via os.path.dirname(sys.executable).
+cp "$WORK/checkmol" "$OUT"
 chmod +x "$OUT"
 echo "checkmol compiled -> $OUT"
+
+PYBIN=""
+if [ -n "${CONDA_PREFIX:-}" ] && [ -d "$CONDA_PREFIX/bin" ]; then
+  PYBIN="$CONDA_PREFIX/bin"
+elif command -v python3 >/dev/null 2>&1; then
+  PYBIN="$(cd "$(dirname "$(command -v python3)")" && pwd)"
+fi
+if [ -n "$PYBIN" ] && [ -w "$PYBIN" ]; then
+  cp "$WORK/checkmol" "$PYBIN/checkmol" && chmod +x "$PYBIN/checkmol"
+  echo "checkmol installed -> $PYBIN/checkmol"
+fi
