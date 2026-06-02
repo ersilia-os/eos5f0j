@@ -132,3 +132,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 /data.h5
+model/framework/code/checkmol
+model/framework/code/checkmol.pas

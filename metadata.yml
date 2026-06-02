@@ -11,33 +11,28 @@ Description: CheckMol analyses a molecule for the presence of functional groups
 Deployment:
   - Local
   - Online
-Source: Local, Online
-Source Type: Internal, Replicated, External
-Task: Annotation, Representation, Sampling
-Subtask: Property calculation or prediction, Activity prediction, Featurization,
-  Projection, Similarity search, Generation
+Source: Local
+Source Type: External
+Task: Representation
+Subtask: Featurization
 Input:
   - Compound
 Input Dimension: 1
 Output:
   - Value
-  - Score
-  - Compound
-  - Text
-Output Dimension: 1
-Output Consistency: Fixed, Variable
-Interpretation: The output of this template model should be interpreted like 
-  this.
+Output Dimension: 204
+Output Consistency: Fixed
+Interpretation: Each of the 204 outputs is the number of times a given CheckMol
+  functional-group type is detected in the molecule (0 if absent). Unparseable
+  inputs return empty values.
 Tag:
-  - Descriptor
+  - Fingerprint
 Biomedical Area:
-  - Biomedical Area 1
-  - Biomedical Area 2
+  - Any
 Target Organism:
-  - Target Organism 1
-  - Target Organism 2
-Publication Type: Peer reviewed, Preprint, Other
-Publication Year: 2026
+  - Any
+Publication Type: Peer reviewed
+Publication Year: 2010
 Publication: https://doi.org/10.3390/molecules15085079
 Source Code: https://homepage.univie.ac.at/norbert.haider/cheminf/cmmm.html
 License: GPL-3.0-or-later
