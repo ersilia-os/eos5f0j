@@ -119,17 +119,18 @@ def checkmol_wrapper(smiles_list, features, fgnum_to_idx):
     for smiles in smiles_list:
         molblock = smiles_to_molblock(smiles)
         if molblock is None:
-            # unparseable SMILES -> NaN row so downstream can tell it failed
-            results.append([np.nan] * n_feat)
+            # unparseable SMILES -> row of None (empty cell in csv, NaN in bin)
+            results.append([None] * n_feat)
             continue
         counts = run_checkmol(molblock)
+        # integer counts (Python ints) so csv output is written as 0/1, not 0.0/1.0
         vector = [0] * n_feat
         for fgnum, count in counts.items():
             idx = fgnum_to_idx.get(fgnum)
             if idx is not None:
                 vector[idx] = count
         results.append(vector)
-    return np.array(results, dtype=np.float32)
+    return results
 
 
 # read SMILES from .csv (or .bin) file
@@ -142,7 +143,8 @@ features, fgnum_to_idx = load_functional_groups()
 outputs = checkmol_wrapper(smiles_list, features, fgnum_to_idx)
 
 # check input and output have the same length
-assert len(smiles_list) == outputs.shape[0]
+assert len(smiles_list) == len(outputs)
 
-# write output (counts as float32 so failed compounds can carry NaN)
+# write output. Values are integer counts; csv keeps them as integers and the
+# binary path uses float32 so any failed compound can carry NaN.
 write_out(outputs, features, output_file, np.float32)
