@@ -29,16 +29,16 @@ This model was incorporated on 2026-06-02.
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
 |------|------|-----------|-------------|
-| cation | integer | high | Number of cation occurrences detected by CheckMol in the molecule (0 if absent) |
-| anion | integer | high | Number of anion occurrences detected by CheckMol in the molecule (0 if absent) |
-| carbonyl_compound | integer | high | Number of carbonyl compound occurrences detected by CheckMol in the molecule (0 if absent) |
-| aldehyde | integer | high | Number of aldehyde occurrences detected by CheckMol in the molecule (0 if absent) |
-| ketone | integer | high | Number of ketone occurrences detected by CheckMol in the molecule (0 if absent) |
-| thiocarbonyl_compound | integer | high | Number of thiocarbonyl compound occurrences detected by CheckMol in the molecule (0 if absent) |
-| thioaldehyde | integer | high | Number of thioaldehyde occurrences detected by CheckMol in the molecule (0 if absent) |
-| thioketone | integer | high | Number of thioketone occurrences detected by CheckMol in the molecule (0 if absent) |
-| imine | integer | high | Number of imine occurrences detected by CheckMol in the molecule (0 if absent) |
-| hydrazone | integer | high | Number of hydrazone occurrences detected by CheckMol in the molecule (0 if absent) |
+| cation | integer | high | Number of cation occurrences in the molecule |
+| anion | integer | high | Number of anion occurrences in the molecule |
+| carbonyl_compound | integer | high | Number of carbonyl compound occurrences in the molecule |
+| aldehyde | integer | high | Number of aldehyde occurrences in the molecule |
+| ketone | integer | high | Number of ketone occurrences in the molecule |
+| thiocarbonyl_compound | integer | high | Number of thiocarbonyl compound occurrences in the molecule |
+| thioaldehyde | integer | high | Number of thioaldehyde occurrences in the molecule |
+| thioketone | integer | high | Number of thioketone occurrences in the molecule |
+| imine | integer | high | Number of imine occurrences in the molecule |
+| hydrazone | integer | high | Number of hydrazone occurrences in the molecule |
 
 _10 of 204 columns are shown_
 ### Source and Deployment
