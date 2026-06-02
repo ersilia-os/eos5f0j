@@ -3,6 +3,7 @@ import os
 import csv
 import sys
 import shutil
+import platform
 import subprocess
 import tempfile
 import numpy as np
@@ -22,24 +23,46 @@ FG_FILE = os.path.join(root, "functional_groups.csv")
 
 
 def find_checkmol():
-    """Locate the checkmol binary built at install time.
+    """Locate the checkmol binary.
 
-    install_checkmol.sh (run from install.yml) compiles checkmol next to this
-    script, so the model code directory is the primary location. As fallbacks we
-    also check the interpreter's bin directory and PATH.
+    Prebuilt, FP-exception-masked binaries for the two Linux architectures Ersilia
+    targets are committed next to this script (checkmol-linux-x86_64 /
+    checkmol-linux-aarch64). We resolve the architecture-specific binary directly so
+    the model works in the packed Docker image regardless of whether
+    install_checkmol.sh ran during the build. Fallbacks: a plain `checkmol` next to
+    this script (e.g. compiled on a dev machine), the interpreter's bin directory,
+    and PATH.
     """
-    candidates = [
+    candidates = []
+    if sys.platform.startswith("linux"):
+        arch = {
+            "x86_64": "x86_64",
+            "amd64": "x86_64",
+            "aarch64": "aarch64",
+            "arm64": "aarch64",
+        }.get(platform.machine().lower())
+        if arch:
+            candidates.append(os.path.join(root, "checkmol-linux-" + arch))
+    candidates += [
         os.path.join(root, "checkmol"),
         os.path.join(os.path.dirname(sys.executable), "checkmol"),
     ]
     for path in candidates:
-        if os.path.isfile(path) and os.access(path, os.X_OK):
-            return path
+        if os.path.isfile(path):
+            if not os.access(path, os.X_OK):
+                # the executable bit can be lost in transit; restore it best-effort
+                try:
+                    os.chmod(path, 0o755)
+                except OSError:
+                    pass
+            if os.access(path, os.X_OK):
+                return path
     on_path = shutil.which("checkmol")
     if on_path:
         return on_path
     raise FileNotFoundError(
-        "checkmol binary not found. It is compiled at install time via install.yml."
+        "checkmol binary not found. Prebuilt binaries are committed next to this "
+        "script (checkmol-linux-*); install_checkmol.sh installs/compiles them."
     )
 
 

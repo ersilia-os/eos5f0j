@@ -128,5 +128,7 @@ dmypy.json
 # Pyre type checker
 .pyre/
 /data.h5
+# transient per-arch copy created by install_checkmol.sh / main.py at runtime.
+# The committed sources are checkmol-linux-* (prebuilt binaries), checkmol.pas
+# (upstream GPL source) and fpufix.pas (FP-exception-mask unit).
 model/framework/code/checkmol
-model/framework/code/checkmol.pas

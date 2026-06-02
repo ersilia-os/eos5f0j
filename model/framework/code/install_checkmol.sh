@@ -1,113 +1,76 @@
 #!/usr/bin/env bash
 #
-# Build the checkmol binary for the Ersilia model eos5f0j.
+# Make the checkmol binary available to the Ersilia model eos5f0j.
 #
-# This script is self-contained and resolves its own location, so it can be
-# invoked from anywhere. It:
-#   1. uses an existing Free Pascal compiler (fpc) if one is on PATH;
-#   2. otherwise downloads the official Free Pascal release for the current
-#      architecture and installs it into a private prefix (no root required);
-#   3. downloads the checkmol Pascal source and compiles it next to main.py.
+# Prebuilt, statically linked, FP-exception-masked checkmol binaries for the two
+# Linux architectures Ersilia targets are committed next to this script:
+#     checkmol-linux-x86_64   checkmol-linux-aarch64
+# They are built from the committed Pascal sources:
+#     checkmol.pas   (upstream, GPL-3.0; https://homepage.univie.ac.at/norbert.haider/cheminf/)
+#     fpufix.pas     (masks FP exceptions so checkmol does not trap with EInvalidOp
+#                     on Linux, where Free Pascal unmasks them by default)
 #
-# checkmol is GPL-3.0; see https://homepage.univie.ac.at/norbert.haider/cheminf/
+# main.py resolves the architecture-specific binary directly, so this script is
+# not strictly required at runtime. It is kept because install.yml invokes it: on
+# Linux it exposes a plain `checkmol` (and a copy on the interpreter's PATH); on
+# other platforms, or if no matching prebuilt binary exists, it compiles from the
+# committed sources when a Free Pascal compiler (fpc) is available.
+#
+# To reproduce the vendored binaries, run this script on a Debian 11 (bullseye,
+# glibc 2.31) image for each architecture with `fpc` + `binutils` installed.
 set -eo pipefail
 
-FPC_VERSION="3.2.2"
-CHECKMOL_URL="https://homepage.univie.ac.at/norbert.haider/download/chemistry/checkmol/checkmol.pas"
-
-# 1. Locate this script -> the model code directory (the compile target). main.py
-#    looks for the checkmol binary next to itself, so we build it right here.
 CODE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 OUT="$CODE_DIR/checkmol"
+OS="$(uname -s)"
+MACH="$(uname -m)"
 
-# 2. Scratch space. Do not assume /tmp exists: honour $TMPDIR, else fall back to
-#    $HOME (which is always present), and let mktemp create a unique directory.
-WORK="$(mktemp -d "${TMPDIR:-$HOME}/checkmol-build.XXXXXX")"
-trap 'rm -rf "$WORK"' EXIT
+# 1. Prefer the committed prebuilt binary for this Linux architecture.
+PREBUILT=""
+if [ "$OS" = "Linux" ]; then
+  case "$MACH" in
+    x86_64|amd64)  PREBUILT="$CODE_DIR/checkmol-linux-x86_64" ;;
+    aarch64|arm64) PREBUILT="$CODE_DIR/checkmol-linux-aarch64" ;;
+  esac
+fi
 
-# Small download helper: prefer wget, fall back to curl.
-fetch() {  # fetch <url> <dest>
-  if command -v wget >/dev/null 2>&1; then
-    wget -q -O "$2" "$1"
-  elif command -v curl >/dev/null 2>&1; then
-    curl -fsSL -o "$2" "$1"
-  else
-    echo "ERROR: neither wget nor curl is available to download files" >&2
-    exit 1
+install_binary() {  # install_binary <src>
+  cp "$1" "$OUT"
+  chmod +x "$OUT"
+  echo "Installed checkmol -> $OUT"
+  # Also expose it on the interpreter's bin so source runs (conda run bash run.sh)
+  # find it via os.path.dirname(sys.executable) / PATH.
+  local pybin=""
+  if [ -n "${CONDA_PREFIX:-}" ] && [ -d "$CONDA_PREFIX/bin" ]; then
+    pybin="$CONDA_PREFIX/bin"
+  elif command -v python3 >/dev/null 2>&1; then
+    pybin="$(cd "$(dirname "$(command -v python3)")" && pwd)"
+  fi
+  if [ -n "$pybin" ] && [ -w "$pybin" ]; then
+    cp "$1" "$pybin/checkmol" && chmod +x "$pybin/checkmol"
+    echo "checkmol also installed -> $pybin/checkmol"
   fi
 }
 
-# 3. Resolve a Free Pascal compiler.
-if command -v fpc >/dev/null 2>&1; then
-  FPC_BIN="$(command -v fpc)"
-else
-  OS="$(uname -s)"
-  MACH="$(uname -m)"
-  if [ "$OS" != "Linux" ]; then
-    echo "ERROR: 'fpc' is not on PATH and automatic Free Pascal install is only" >&2
-    echo "       supported on Linux (detected '$OS'). Please install Free Pascal." >&2
-    exit 1
-  fi
-  case "$MACH" in
-    x86_64|amd64)  FPC_ARCH="x86_64";  PPC="ppcx64" ;;
-    aarch64|arm64) FPC_ARCH="aarch64"; PPC="ppca64" ;;
-    *) echo "ERROR: unsupported architecture '$MACH' for automatic FPC install" >&2; exit 1 ;;
-  esac
-
-  TARBALL="fpc-${FPC_VERSION}.${FPC_ARCH}-linux.tar"
-  URL="https://sourceforge.net/projects/freepascal/files/Linux/${FPC_VERSION}/${TARBALL}/download"
-  echo "No fpc on PATH; downloading Free Pascal ${FPC_VERSION} for ${FPC_ARCH}-linux ..."
-  fetch "$URL" "$WORK/$TARBALL"
-  tar -xf "$WORK/$TARBALL" -C "$WORK"
-
-  SRC="$WORK/fpc-${FPC_VERSION}.${FPC_ARCH}-linux"
-  BIN_TAR="$SRC/binary.${FPC_ARCH}-linux.tar"
-  PREFIX="$HOME/.local/share/eos5f0j-fpc"
-  FPCDIR="$PREFIX/lib/fpc/${FPC_VERSION}"
-  mkdir -p "$PREFIX/etc"
-
-  # Extract only what we need to compile: the compiler base and the config tool.
-  tar -xOf "$BIN_TAR" "base.${FPC_ARCH}-linux.tar.gz"           | tar -xzf - -C "$PREFIX"
-  tar -xOf "$BIN_TAR" "utils-fpcmkcfg.${FPC_ARCH}-linux.tar.gz" | tar -xzf - -C "$PREFIX"
-
-  # The release archive ships the compiler at lib/fpc/<ver>/ppcXXX but not the
-  # bin/ symlink the interactive installer would create. The fpc driver locates
-  # the compiler next to itself, so link it into bin/ (otherwise: "ppcx64 can't
-  # be executed, error code: 127").
-  ln -sf "$FPCDIR/$PPC" "$PREFIX/bin/$PPC"
-
-  # Generate a config so the driver can locate its RTL units (SysUtils, Math).
-  "$FPCDIR/samplecfg" "$FPCDIR" "$PREFIX/etc" >/dev/null 2>&1 || true
-  export PPC_CONFIG_PATH="$PREFIX/etc"
-  FPC_BIN="$PREFIX/bin/fpc"
+if [ -n "$PREBUILT" ] && [ -f "$PREBUILT" ]; then
+  install_binary "$PREBUILT"
+  exit 0
 fi
 
-echo "Using Free Pascal compiler: $FPC_BIN"
-
-# 4. Download the checkmol source.
-fetch "$CHECKMOL_URL" "$WORK/checkmol.pas"
-
-# 5. Compile checkmol. Delphi mode (-S2) is REQUIRED by the source. Build inside
-#    the scratch dir (keeps .o/.ppu artifacts out of the model).
-( cd "$WORK" && "$FPC_BIN" -S2 -O2 checkmol.pas )
-
-# 6. Install the binary where main.py's find_checkmol() will see it. We install
-#    to TWO places so it is found no matter which copy of run.sh is executed:
-#      - next to main.py (this code dir): used by the packed model bundle.
-#      - the Python environment's bin: shared by every interpreter-launched run
-#        (e.g. `conda run bash run.sh` from the source checkout during testing),
-#        found via os.path.dirname(sys.executable).
-cp "$WORK/checkmol" "$OUT"
-chmod +x "$OUT"
-echo "checkmol compiled -> $OUT"
-
-PYBIN=""
-if [ -n "${CONDA_PREFIX:-}" ] && [ -d "$CONDA_PREFIX/bin" ]; then
-  PYBIN="$CONDA_PREFIX/bin"
-elif command -v python3 >/dev/null 2>&1; then
-  PYBIN="$(cd "$(dirname "$(command -v python3)")" && pwd)"
+# 2. Fallback: compile from the committed sources if a compiler is available
+#    (e.g. on a developer machine whose platform has no prebuilt binary).
+echo "No prebuilt checkmol for $OS-$MACH; attempting to compile from source." >&2
+if ! command -v fpc >/dev/null 2>&1; then
+  echo "WARNING: 'fpc' (Free Pascal) not found and no prebuilt binary for this" >&2
+  echo "         platform. checkmol will be resolved from PATH at runtime." >&2
+  exit 0
 fi
-if [ -n "$PYBIN" ] && [ -w "$PYBIN" ]; then
-  cp "$WORK/checkmol" "$PYBIN/checkmol" && chmod +x "$PYBIN/checkmol"
-  echo "checkmol installed -> $PYBIN/checkmol"
-fi
+
+WORK="$(mktemp -d "${TMPDIR:-$HOME}/checkmol-build.XXXXXX")"
+trap 'rm -rf "$WORK"' EXIT
+cp "$CODE_DIR/checkmol.pas" "$CODE_DIR/fpufix.pas" "$WORK/"
+# Inject the FP-exception-mask unit into checkmol's uses clause, then compile.
+sed -i.bak -E 's/^([[:space:]]*SYSUTILS,[[:space:]]*MATH)[[:space:]]*;/\1, fpufix;/' \
+  "$WORK/checkmol.pas"
+( cd "$WORK" && fpc -Sd -O2 checkmol.pas )
+install_binary "$WORK/checkmol"
