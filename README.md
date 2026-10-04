@@ -1,6 +1,6 @@
 # CheckMol functional group census
 
-CheckMol analyses a molecule for the presence of functional groups and structural elements, recognising ca. 200 distinct functional-group types; alcohols, carbonyls, carboxylic acids, amines, halides, heterocycles, and many more. For each input compound it returns a fixed-length vector of functional-group counts, providing an interpretable, rule-based molecular descriptor rather than an abstract learned embedding.
+Counts occurrences of roughly 200 functional group types in a molecule, spanning alcohols, carbonyls, carboxylic acids, amines, halides, heterocycles and many more. CheckMol performs the perception through explicit chemical rules rather than a learned model, so every count traces to a defined group and the output stays fully interpretable, unlike a hashed fingerprint. Molecules that cannot be parsed return empty values rather than zeros, which distinguishes failure from genuine absence.
 
 This model was incorporated on 2026-06-02.Last packaged on 2026-06-02.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2026-06-02.Last packaged on 2026-06-02.
 ### Output
 - **Output Dimension:** `204`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Each of the 204 outputs is the number of times a given CheckMol functional-group type is detected in the molecule (0 if absent). Unparseable inputs return empty values.
+- **Interpretation:** Counts of each of 204 functional group types detected in the molecule.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
