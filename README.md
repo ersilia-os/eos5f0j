@@ -1,6 +1,6 @@
 # CheckMol functional group census
 
-Counts occurrences of roughly 200 functional group types in a molecule, spanning alcohols, carbonyls, carboxylic acids, amines, halides, heterocycles and many more. CheckMol performs the perception through explicit chemical rules rather than a learned model, so every count traces to a defined group and the output stays fully interpretable, unlike a hashed fingerprint. Molecules that cannot be parsed return empty values rather than zeros, which distinguishes failure from genuine absence.
+Counts occurrences of 204 functional group types in a molecule, spanning alcohols, carbonyls, carboxylic acids, amines, halides, heterocycles and many more. Haider released checkmol as an open-source command-line program alongside the MolDB structure-database package, and it perceives groups through explicit chemical rules rather than a learned model, so every count traces to a defined group and stays interpretable, unlike a hashed fingerprint. Molecules that cannot be parsed return empty values rather than zeros, which separates failure from genuine absence.
 
 This model was incorporated on 2026-06-02.Last packaged on 2026-06-02.
 
