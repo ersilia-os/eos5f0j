@@ -2,13 +2,14 @@ Identifier: eos5f0j
 Slug: checkmol-functional-groups
 Status: Ready
 Title: CheckMol functional group census
-Description: Counts occurrences of 204 functional group types in a molecule, spanning
-  alcohols, carbonyls, carboxylic acids, amines, halides, heterocycles and many more.
-  Haider released checkmol as an open-source command-line program alongside the MolDB
-  structure-database package, and it perceives groups through explicit chemical rules
-  rather than a learned model, so every count traces to a defined group and stays
-  interpretable, unlike a hashed fingerprint. Molecules that cannot be parsed return
-  empty values rather than zeros, which separates failure from genuine absence.
+Description: Counts occurrences of 204 functional group types in a molecule, 
+  spanning alcohols, carbonyls, carboxylic acids, amines, halides, heterocycles 
+  and many more. Haider released checkmol as an open-source command-line program
+  alongside the MolDB structure-database package, and it perceives groups 
+  through explicit chemical rules rather than a learned model, so every count 
+  traces to a defined group and stays interpretable, unlike a hashed 
+  fingerprint. Molecules that cannot be parsed return empty values rather than 
+  zeros, which separates failure from genuine absence.
 Deployment:
   - Local
   - Online
@@ -23,7 +24,8 @@ Output:
   - Value
 Output Dimension: 204
 Output Consistency: Fixed
-Interpretation: Counts of each of 204 functional group types detected in the molecule.
+Interpretation: Counts of each of 204 functional group types detected in the 
+  molecule.
 Tag:
   - Fingerprint
 Biomedical Area:
@@ -38,7 +40,7 @@ License: GPL-3.0-or-later
 Contributor: miquelduranfrigola
 Incorporation Date: '2026-06-02'
 Last Packaging Date: '2026-06-02'
-Release: v1.0.0
+Release: v1.0.1
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5f0j.zip
 DockerHub: https://hub.docker.com/r/ersiliaos/eos5f0j
 Docker Architecture:
