@@ -2,7 +2,8 @@
 
 Counts occurrences of 204 functional group types in a molecule, spanning alcohols, carbonyls, carboxylic acids, amines, halides, heterocycles and many more. Haider released checkmol as an open-source command-line program alongside the MolDB structure-database package, and it perceives groups through explicit chemical rules rather than a learned model, so every count traces to a defined group and stays interpretable, unlike a hashed fingerprint. Molecules that cannot be parsed return empty values rather than zeros, which separates failure from genuine absence.
 
-This model was incorporated on 2026-06-02.Last packaged on 2026-06-02.
+This model was incorporated on 2026-06-02.
+Last packaged on 2026-06-02.
 
 ## Information
 ### Identifiers
@@ -46,6 +47,7 @@ _10 of 204 columns are shown_
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos5f0j](https://hub.docker.com/r/ersiliaos/eos5f0j)
 - **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5f0j.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5f0j.zip)
+- **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos5f0j_v1.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos5f0j_v1.sif)
 
 ### Resource Consumption
 - **Model Size (Mb):** `4`
